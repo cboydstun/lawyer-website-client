@@ -72,8 +72,8 @@ Jacqueline R. Kriebel  <i className="fab fa-typo3"/>
           </Button>
         </div>
         <Nav.Start>
-          <Button tag="a" color="secondary" className="normal-case text-xl">
-            daisyUI
+          <Button tag="a" color="teal-900 h-5" className="normal-case text-xl">
+          Jacqueline R. Kriebel
           </Button>
         </Nav.Start>
         <Nav.End>
