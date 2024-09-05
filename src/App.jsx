@@ -13,11 +13,10 @@ function App() {
   <Navbar/>
   <HeroSection/>
   <Routes>
-
     <Route path='/' exact/>
   </Routes>
   </Router>
-  
+
   </>
 )
 }
