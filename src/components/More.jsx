@@ -2,7 +2,12 @@ import React from 'react'
 
 const More = () => {
   return (
-    <div>More</div>
+    <div style={{backgroundColor:"gray"}}>
+      More
+      <div>
+        <p>Text Area</p>
+      </div>
+    </div>
   )
 }
 
