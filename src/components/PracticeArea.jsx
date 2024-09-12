@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const PracticeArea = () => {
   return (
-    <div style={{backgroundColor:"gray"}}>
-      
+    <div style={{ backgroundColor: "gray" }}>
       PracticeArea
-    <div>
-      <p>Text Area</p>
+      <div>
+        <p>Text Area</p>
+      </div>
     </div>
-    
-    </div>
-  )
-}
+  );
+};
 
-export default PracticeArea
+export default PracticeArea;

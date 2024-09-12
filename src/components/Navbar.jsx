@@ -11,7 +11,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
   return (
     <>
-      <Nav className="bg-primary min-w-full w-screen absolute" style={{top:0}}>
+      <Nav className="bg-primary min-w-full w-screen" style={{ top: 0 }}>
         <div className="flex-none">
           <Button shape="square" color="ghost">
             <svg
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         <Nav.Start>
           <Button tag="a" color="teal-900 h-5" className="normal-case text-xl">
-          Jacqueline R. Kriebel
+            Jacqueline R. Kriebel
           </Button>
         </Nav.Start>
         <Nav.End>
@@ -43,18 +43,30 @@ const Navbar = () => {
             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
               About
             </Link>
-            <Link to='/attorneyprofile' className='nav-links' onClick={closeMobileMenu}>
-    Attorney Profile
-    </Link>
-    <Link to='/practieareas' className='nav-links' onClick={closeMobileMenu}>
-    Practice Areas
-    </Link>
-    <Link to='/clienttestimonials' className='nav-links' onClick={closeMobileMenu}>
-  Client Testimonials
-    </Link>
-    <Link to='/more' className='nav-links' onClick={closeMobileMenu}>
-   More
-    </Link>
+            <Link
+              to="/attorneyprofile"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Attorney Profile
+            </Link>
+            <Link
+              to="/practieareas"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Practice Areas
+            </Link>
+            <Link
+              to="/clienttestimonials"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Client Testimonials
+            </Link>
+            <Link to="/more" className="nav-links" onClick={closeMobileMenu}>
+              More
+            </Link>
           </div>
         </Nav.End>
       </Nav>
