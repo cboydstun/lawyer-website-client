@@ -6,7 +6,7 @@ const Attorneyprofile = () => {
       Attorneyprofile
       <div>
         <h1>
-        <img src={JCicon} alt="icon image" /> 
+        <img src={JCicon} alt="icon image "/> 
           Jacqueline R. Kriebel Attorney Phone 210-677-5586 Fax 210-467-5788
           Email Jacqueline R. Kriebel
         </h1>
