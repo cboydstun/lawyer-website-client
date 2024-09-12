@@ -1,11 +1,19 @@
 import React from "react";
-import JacqulineRKriebleImage from "../assets/photos2.jpg"
+import JacqulineRKriebleImage from "../assets/photos2.jpg";
+import JcIcon from "../assets/Kriebellaw.png"
+
 const About = () => {
   return (
     <div style={{ backgroundColor: "gray" }}>
+       <div>
+        <img src={JcIcon} alt="Icon Image" />
+      </div>
       About
       <div className="flex justify-center gap-5">
-        <img src={JacqulineRKriebleImage} alt="Image of Jacqueline R. Kriebel" />
+        <img
+          src={JacqulineRKriebleImage}
+          alt="Image of Jacqueline R. Kriebel"
+        />
       </div>
       <div>
         <h1>Meet Jacqueline R. Kriebel</h1>
