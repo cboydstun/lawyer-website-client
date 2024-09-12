@@ -1,0 +1,11 @@
+/* Creating the CSS for Dropdown Menu*/
+.Dropdownmenu{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: rgb (149, 157, 165, 0.2) opx 8px 24px;
+    cursor: pointer;
+}

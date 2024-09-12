@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { Button, Navbar as Nav } from "react-daisyui";
+import { Button, Navbar as Nav, Dropdown } from "react-daisyui";
+
 
 //Creating the functions for the Navbar
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
   return (
     <>
-      <Nav className="bg-primary min-w-full w-screen" style={{ top: 0 }}>
+      <Nav className="bg-primary min-w-full w-screen max-w-screen" style={{ top: 0 }}>
         <div className="flex-none">
           <Button shape="square" color="ghost">
             <svg
@@ -64,9 +65,19 @@ const Navbar = () => {
             >
               Client Testimonials
             </Link>
-            <Link to="/more" className="nav-links" onClick={closeMobileMenu}>
+            {/* <Link to="/more" className="nav-links" onClick={closeMobileMenu}>
               More
-            </Link>
+            </Link> */}
+            <Dropdown>
+              <Link  tag="label" tabIndex={0}>
+                More
+              </Link>
+              <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
+                <Dropdown.Item>Homepage</Dropdown.Item>
+                <Dropdown.Item>Portfolio</Dropdown.Item>
+                <Dropdown.Item>About</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
         </Nav.End>
       </Nav>
