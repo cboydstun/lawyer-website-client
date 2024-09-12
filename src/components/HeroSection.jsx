@@ -1,12 +1,13 @@
 import React from 'react'
-
+import lawOfficeImg from "../assets/lawoffice.jpg"
 const HeroSection = () => {
   return (
-    <div className='hero-container'>
+    <div className='hero-container flex justify-center gap-5'>
       <div>
-        <img src="" alt="Law Firm Image" />
+        <img src={lawOfficeImg} alt="Law Firm Hero Image"/>
+       
       </div>
-      <h1>Hero Section of Website</h1>
+      <h2>Hero Section of Website</h2>
     </div>
   )
 }
