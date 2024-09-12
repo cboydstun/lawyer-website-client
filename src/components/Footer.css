@@ -1,7 +1,29 @@
 /*Creating the CSS for the Footer*/
-/* *{
-    box-sizing: border-box;
-    margin: 0 ;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom footer styles */
+.footer {
+    @apply bg-red-900 text-yellow-300 py-8 px-4 flex flex-col items-center; 
+}
+
+.footer-content {
+    @apply flex flex-col md:flex-row items-center max-w-screen-lg mx-auto;
+}
+
+.footer-image {
+    @apply w-32 h-auto md:mr-8 mb-4 md:mb-0;
+}
+
+.review-container {
+    @apply flex flex-col flex-1;
+}
+
+.footer-heading {
+    @apply text-xl font-semibold mb-4;
+}
+
+.review {
+@apply bg-gray-700 p-3 mb-2 rounded-md;
+}
