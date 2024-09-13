@@ -21,8 +21,6 @@ const Dropdownmenu = () => {
     <li>Homicide</li>
     <li>Traffic Violations</li>
     <li>Drug Crimes</li>
-    <li>Juvenile Law</li>
-    <li>Probate and Estate Administration</li>
 </ul>
     </div>
   );

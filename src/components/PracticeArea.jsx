@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const PracticeArea = () => {
   return (
     <div style={{ backgroundColor: "gray" }}>
@@ -7,6 +8,7 @@ const PracticeArea = () => {
       <div>
         <p>Text Area</p>
       </div>
+
     </div>
   );
 };
