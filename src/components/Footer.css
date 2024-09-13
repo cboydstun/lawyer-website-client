@@ -20,10 +20,10 @@
     @apply flex flex-col flex-1;
 }
 
-.footer-heading {
+/* .footer-heading {
     @apply text-xl font-semibold mb-4;
 }
 
 .review {
 @apply bg-gray-700 p-3 mb-2 rounded-md;
-}
+} */

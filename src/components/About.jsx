@@ -1,11 +1,11 @@
 import React from "react";
 import JacqulineRKriebleImage from "../assets/photos2.jpg";
-import JcIcon from "../assets/Kriebellaw.png"
+import JcIcon from "../assets/Kriebellaw.png";
 
 const About = () => {
   return (
     <div style={{ backgroundColor: "gray" }}>
-       <div>
+      <div>
         <img src={JcIcon} alt="Icon Image" />
       </div>
       About
