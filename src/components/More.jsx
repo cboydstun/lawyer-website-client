@@ -1,4 +1,5 @@
 import React from "react";
+import MapsandDirections from "../../MapsandDirections";
 
 const More = () => {
   return (
@@ -7,6 +8,7 @@ const More = () => {
       <div>
         <p>Text Area</p>
       </div>
+      <MapsandDirections/>
     </div>
   );
 };
