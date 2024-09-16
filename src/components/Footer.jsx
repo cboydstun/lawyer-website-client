@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css"; //Import CSS file
+import JCicon from "../assets/photos2.jpg"
 
 const reviews = [
   "Powerhouse!!! Amazing, worth every penny!! Justice was served!!! You can't go wrong hiring her!!!! I'm so grateful for her!!!! - Heather M",
@@ -12,26 +13,33 @@ const reviews = [
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-content">
+    <div>
+    <footer className=" bg-red-900 text-yellow-300 py-8 px-4 flex flex-col items-center overflow-x-hidden">
+      <div className="container mx-auto px-3 flex flex-col items-center">
         <img 
-          src="assets/photos2.jpg" 
-          alt="Footer Image" 
-          className="footer-image"
+          src={JCicon} 
+          alt="icon image" 
+          className="w-24 h-24 mb-4"
         />
-        <div className="review-container">
-          <h2 className="footer-heading">Client Reviews</h2>
-      <div className="reviews">
+      <div className="text-center mb-8">
+        <h2 className="text-xl font-bold mb-4">Client Reviews</h2>
+      <div className="space-y-4">
         {reviews.map((review, index) => (
-          <div key={index} className="review">
+          <div key={index} className="p-4 bg-gray-700 rounded-lg shadow-md">
             {review}
             </div>
         ))}
       </div>
     </div>
   </div>
+  <div className="text-center mt-4 text-lg">
+  <p>Take Control of Your Legal Situation</p>
+  <p className="font-semibold mt-2">Book your Consultation: <span className="text-yellow-500">210-677-5586</span></p>
+  </div>
 </footer>
+</div>
   );
 }
+
 
 export default Footer;
