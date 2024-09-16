@@ -40,15 +40,19 @@
     @apply flex flex-col flex-1;
 }
 
-.footer-heading {
+/* .footer-heading {
     @apply text-xl font-semibold mb-4;
 }
 
 .review {
 @apply bg-gray-700 p-3 mb-2 rounded-md;
+<<<<<<< HEAD
 }
 
 .consult-text {
     @apply text-lg font-bold mb-4 absolute right-0 bottom-28
 } 
     */
+=======
+} */
+>>>>>>> 65f6291542c1319caa643a4265b8cccf3194f3aa

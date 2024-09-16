@@ -1,14 +1,16 @@
 import React from "react";
-
+import JCicon from "../assets/photos2.jpg"
 const Attorneyprofile = () => {
   return (
     <div style={{ backgroundColor: "gray" }}>
       Attorneyprofile
       <div>
         <h1>
+        <img src={JCicon} alt="icon image "/> 
           Jacqueline R. Kriebel Attorney Phone 210-677-5586 Fax 210-467-5788
           Email Jacqueline R. Kriebel
         </h1>
+             
         <p>
           Jacqueline Kriebel is originally from Pennsylvania, where she
           developed a spirited work ethic and aggressive style of

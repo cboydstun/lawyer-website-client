@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { Button, Navbar as Nav } from "react-daisyui";
+import { Button, Navbar as Nav, Dropdown } from "react-daisyui";
 
 //Creating the functions for the Navbar
 const Navbar = () => {
@@ -11,7 +11,10 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
   return (
     <>
-      <Nav className="bg-primary min-w-full w-screen" style={{ top: 0 }}>
+      <Nav
+        className="bg-primary min-w-full w-screen max-w-screen"
+        style={{ top: 0 }}
+      >
         <div className="flex-none">
           <Button shape="square" color="ghost">
             <svg
@@ -50,13 +53,27 @@ const Navbar = () => {
             >
               Attorney Profile
             </Link>
-            <Link
+            <Dropdown horizontal="left" vertical="bottom">
+              <Link tag="label" tabIndex={0}>
+                Practice Areas
+              </Link>
+              <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
+                <Dropdown.Item>Divorce</Dropdown.Item>
+                <Dropdown.Item>Department of Family and Protective Services (CPS)</Dropdown.Item>
+                <Dropdown.Item>Child Custody</Dropdown.Item>
+                <Dropdown.Item>Criminal Law</Dropdown.Item>
+                <Dropdown.Item>Probate and Estate Administration</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            {/* <Link
               to="/practieareas"
               className="nav-links"
               onClick={closeMobileMenu}
             >
               Practice Areas
-            </Link>
+              
+            </Link> */}
+            
             <Link
               to="/clienttestimonials"
               className="nav-links"
@@ -64,9 +81,21 @@ const Navbar = () => {
             >
               Client Testimonials
             </Link>
-            <Link to="/more" className="nav-links" onClick={closeMobileMenu}>
+
+            {/* <Link to="/more" className="nav-links" onClick={closeMobileMenu}>
               More
-            </Link>
+            </Link> */}
+            <Dropdown horizontal="left" vertical="bottom">
+              <Link tag="label" tabIndex={0}>
+                More
+              </Link>
+              <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
+                <Dropdown.Item>News</Dropdown.Item>
+                <Dropdown.Item>Reviews and Ratings</Dropdown.Item>
+                <Dropdown.Item>Contact Us</Dropdown.Item>
+                <Dropdown.Item>Maps and Directions</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
         </Nav.End>
       </Nav>
