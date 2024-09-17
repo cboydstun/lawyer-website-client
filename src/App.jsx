@@ -9,7 +9,7 @@ import Attorneyprofile from "./components/Attorneyprofile.jsx";
 import PracticeArea from "./components/PracticeArea.jsx";
 import ClienTestimonals from "./components/ClientTestimonals.jsx";
 import More from "./components/More.jsx";
-
+import News from "../News.jsx";
 
 function App() {
   

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button, Navbar as Nav, Dropdown } from "react-daisyui";
+import MapsandDirections from "../../MapsandDirections";
 
 //Creating the functions for the Navbar
 const Navbar = () => {
@@ -59,7 +60,9 @@ const Navbar = () => {
               </Link>
               <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
                 <Dropdown.Item>Divorce</Dropdown.Item>
-                <Dropdown.Item>Department of Family and Protective Services (CPS)</Dropdown.Item>
+                <Dropdown.Item>
+                  Department of Family and Protective Services (CPS)
+                </Dropdown.Item>
                 <Dropdown.Item>Child Custody</Dropdown.Item>
                 <Dropdown.Item>Criminal Law</Dropdown.Item>
                 <Dropdown.Item>Probate and Estate Administration</Dropdown.Item>
@@ -73,7 +76,7 @@ const Navbar = () => {
               Practice Areas
               
             </Link> */}
-            
+
             <Link
               to="/clienttestimonials"
               className="nav-links"
