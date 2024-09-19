@@ -8,7 +8,6 @@ import About from "./components/About.jsx";
 import Attorneyprofile from "./components/Attorneyprofile.jsx";
 import PracticeArea from "./components/PracticeArea.jsx";
 import ClienTestimonals from "./components/ClientTestimonals.jsx";
-import More from "./components/More.jsx";
 import News from "./components/News.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import RatingsandReviews from "./components/RatingsandReviews.jsx";
@@ -17,54 +16,27 @@ import Divorce from "./components/Practice Area Pages/Divorce.jsx"
 import FamilyLaw from "./components/Practice Area Pages/FamilyLaw.jsx";
 
 function App() {
-  
   return (
     <>
       <Router>
-       
-
         <Navbar />
         <div style={{ minHeight: "65vh" }}>
           <Routes>
             <Route path="/home" element={<Home />} />
-          </Routes>
-          <Routes>
             <Route path="/about" element={<About />} />
-          </Routes>
-          <Routes>
-            <Route path="/attorneyprofile" element={<Attorneyprofile />} />
-          </Routes>
-
-          <Routes>
-            <Route path="/practieareas" element={<PracticeArea />} />
+            <Route path="/attorneyprofile" element={<Attorneyprofile />} /> 
+            <Route path="/practieareas" element={<PracticeArea />}   />
             <Route path="/divorce" element={<Divorce />} />
             <Route path="/family-law" element={<FamilyLaw />} />
-          </Routes>
-
-          <Routes>
             <Route path="/clienttestimonials" element={<ClienTestimonals />} />
-          </Routes>
-          <Routes>
-            <Route path="/more" element={<More />} />
-          </Routes>
-
-    
-          <Routes>
             <Route path="/news" element={<News />} />
-          </Routes>
+            <Route path="/ratingsandreviews" element={<RatingsandReviews />} />
+            <Route path="/MapsandDirections" element={<MapsandDirections />} />
+        </Routes>
 
-          <Routes>
-            <Route path="/ratingsandreviews" element={<RatingsandReviews/>} />
-          </Routes>
-
-          <Routes>
-            <Route path="/MapsandDirections" element={<MapsandDirections/>} />
-          </Routes> 
-
-      <div>
-        <ContactUs/>
-      </div>
-
+          <div>
+            <ContactUs />
+          </div>
         </div>
 
         <Footer />
