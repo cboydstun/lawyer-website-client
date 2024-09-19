@@ -1,5 +1,5 @@
 import React from "react";
-import MapsandDirections from "../../MapsandDirections";
+import MapsandDirections from "./MapsandDirections";
 
 const More = () => {
   return (

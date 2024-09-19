@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button, Navbar as Nav, Dropdown } from "react-daisyui";
-import MapsandDirections from "../../MapsandDirections";
+import MapsandDirections from "../components/MapsandDirections";
+import RatingsandReviews from "../components/RatingsandReviews";
+import News from "../components/News";
+import ContactUs from "../components/ContactUs"
+
 
 //Creating the functions for the Navbar
 const Navbar = () => {
@@ -93,10 +97,12 @@ const Navbar = () => {
                 More
               </Link>
               <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
-                <Dropdown.Item>News</Dropdown.Item>
-                <Dropdown.Item>Reviews and Ratings</Dropdown.Item>
-                <Dropdown.Item>Contact Us</Dropdown.Item>
-                <Dropdown.Item>Maps and Directions</Dropdown.Item>
+                <Dropdown.Item><Link to="News.jsx">News</Link></Dropdown.Item>
+                <Dropdown.Item><Link to="RatingsandReviews.jsx">RatingsandReviews</Link></Dropdown.Item>
+                
+                <Dropdown.Item><Link to="ContactUs.jsx">Contact Us</Link></Dropdown.Item>
+
+                <Dropdown.Item><Link to="MapsandDirections.jsx">MapsandDirections</Link></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
