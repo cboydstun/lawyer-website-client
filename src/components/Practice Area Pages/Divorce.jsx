@@ -32,3 +32,5 @@ Call Ms. Kriebel today at 210-677-5586 to arrange a consultation regarding your 
         </div>
     );
 };
+
+export default Divorce;
