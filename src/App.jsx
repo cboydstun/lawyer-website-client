@@ -29,13 +29,6 @@ function App() {
             <Route path="/divorce" element={<Divorce />} />
             <Route path="/family-law" element={<FamilyLaw />} />
             <Route path="/clienttestimonials" element={<ClienTestimonals />} />
-<<<<<<< HEAD
-          </Routes>
-          
-          
-          <Routes>
-=======
->>>>>>> 234aa5260a5e4e77cbffd1e4ee77e50995cf1495
             <Route path="/news" element={<News />} />
             <Route path="/ratingsandreviews" element={<RatingsandReviews />} />
             <Route path="/MapsandDirections" element={<MapsandDirections />} />
