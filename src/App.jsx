@@ -13,6 +13,7 @@ import News from "./components/News.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import RatingsandReviews from "./components/RatingsandReviews.jsx";
 import MapsandDirections from "./components/MapsandDirections.jsx";
+import Divorce from "./components/Practice Area Pages/Divorce.jsx"
 
 function App() {
   
