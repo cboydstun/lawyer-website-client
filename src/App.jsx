@@ -15,12 +15,9 @@ import RatingsandReviews from "./components/RatingsandReviews.jsx";
 import MapsandDirections from "./components/MapsandDirections.jsx";
 
 function App() {
-  
   return (
     <>
       <Router>
-       
-
         <Navbar />
         <div style={{ minHeight: "65vh" }}>
           <Routes>
@@ -34,7 +31,7 @@ function App() {
           </Routes>
 
           <Routes>
-            <Route path="/practieareas" element={<PracticeArea />} />
+            <Route path="/practieareas" element={<PracticeArea />}   />
           </Routes>
 
           <Routes>
@@ -44,23 +41,21 @@ function App() {
             <Route path="/more" element={<More />} />
           </Routes>
 
-    
           <Routes>
             <Route path="/news" element={<News />} />
           </Routes>
 
           <Routes>
-            <Route path="/ratingsandreviews" element={<RatingsandReviews/>} />
+            <Route path="/ratingsandreviews" element={<RatingsandReviews />} />
           </Routes>
 
           <Routes>
-            <Route path="/MapsandDirections" element={<MapsandDirections/>} />
-          </Routes> 
+            <Route path="/MapsandDirections" element={<MapsandDirections />} />
+          </Routes>
 
-      <div>
-        <ContactUs/>
-      </div>
-
+          <div>
+            <ContactUs />
+          </div>
         </div>
 
         <Footer />
