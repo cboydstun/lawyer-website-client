@@ -14,6 +14,7 @@ import ContactUs from "./components/ContactUs.jsx";
 import RatingsandReviews from "./components/RatingsandReviews.jsx";
 import MapsandDirections from "./components/MapsandDirections.jsx";
 import Divorce from "./components/Practice Area Pages/Divorce.jsx"
+import FamilyLaw from "./components/Practice Area Pages/FamilyLaw.jsx";
 
 function App() {
   
@@ -36,6 +37,8 @@ function App() {
 
           <Routes>
             <Route path="/practieareas" element={<PracticeArea />} />
+            <Route path="/divorce" element={<Divorce />} />
+            <Route path="/family-law" element={<FamilyLaw />} />
           </Routes>
 
           <Routes>
