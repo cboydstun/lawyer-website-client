@@ -12,6 +12,8 @@ import News from "./components/News.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import RatingsandReviews from "./components/RatingsandReviews.jsx";
 import MapsandDirections from "./components/MapsandDirections.jsx";
+import Divorce from "./components/Practice Area Pages/Divorce.jsx"
+import FamilyLaw from "./components/Practice Area Pages/FamilyLaw.jsx";
 
 function App() {
   return (
@@ -21,34 +23,16 @@ function App() {
         <div style={{ minHeight: "65vh" }}>
           <Routes>
             <Route path="/home" element={<Home />} />
-          </Routes>
-          <Routes>
             <Route path="/about" element={<About />} />
-          </Routes>
-          <Routes>
-            <Route path="/attorneyprofile" element={<Attorneyprofile />} />
-          </Routes>
-
-          <Routes>
+            <Route path="/attorneyprofile" element={<Attorneyprofile />} /> 
             <Route path="/practieareas" element={<PracticeArea />}   />
-          </Routes>
-
-          <Routes>
+            <Route path="/divorce" element={<Divorce />} />
+            <Route path="/family-law" element={<FamilyLaw />} />
             <Route path="/clienttestimonials" element={<ClienTestimonals />} />
-          </Routes>
-          
-          
-          <Routes>
             <Route path="/news" element={<News />} />
-          </Routes>
-
-          <Routes>
             <Route path="/ratingsandreviews" element={<RatingsandReviews />} />
-          </Routes>
-
-          <Routes>
             <Route path="/MapsandDirections" element={<MapsandDirections />} />
-          </Routes>
+        </Routes>
 
           <div>
             <ContactUs />
