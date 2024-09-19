@@ -2,7 +2,14 @@ import React from 'react'
 
 const RatingsandReviews = () => {
   return (
-    <div>RatingsandReviews</div>
+    <div>
+      
+    <div>
+      <p> RatingsandReviews</p>
+    </div>
+      
+    
+    </div>
   )
 }
 

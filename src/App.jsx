@@ -9,7 +9,10 @@ import Attorneyprofile from "./components/Attorneyprofile.jsx";
 import PracticeArea from "./components/PracticeArea.jsx";
 import ClienTestimonals from "./components/ClientTestimonals.jsx";
 import More from "./components/More.jsx";
-import News from "../News.jsx";
+import News from "./components/News.jsx";
+import ContactUs from "./components/ContactUs.jsx";
+import RatingsandReviews from "./components/RatingsandReviews.jsx";
+import MapsandDirections from "./components/MapsandDirections.jsx";
 
 function App() {
   
@@ -44,7 +47,9 @@ function App() {
 
          
 
-
+      <div>
+        <ContactUs/>
+      </div>
 
         </div>
 
