@@ -100,7 +100,7 @@ const Navbar = () => {
                   <Link to="/News">News</Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link to="/RatingsandReviews">RatingsandReviews</Link>
+                  <Link to="/RatingsandReviews">Ratings and Reviews</Link>
                 </Dropdown.Item>
 
                 <Dropdown.Item>
@@ -108,7 +108,7 @@ const Navbar = () => {
                 </Dropdown.Item>
 
                 <Dropdown.Item>
-                  <Link to="/MapsandDirections">MapsandDirections</Link>
+                  <Link to="/MapsandDirections">Maps and Directions</Link>
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
