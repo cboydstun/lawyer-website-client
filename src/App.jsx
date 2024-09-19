@@ -8,7 +8,6 @@ import About from "./components/About.jsx";
 import Attorneyprofile from "./components/Attorneyprofile.jsx";
 import PracticeArea from "./components/PracticeArea.jsx";
 import ClienTestimonals from "./components/ClientTestimonals.jsx";
-import More from "./components/More.jsx";
 import News from "./components/News.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import RatingsandReviews from "./components/RatingsandReviews.jsx";
@@ -37,10 +36,8 @@ function App() {
           <Routes>
             <Route path="/clienttestimonials" element={<ClienTestimonals />} />
           </Routes>
-          <Routes>
-            <Route path="/more" element={<More />} />
-          </Routes>
-
+          
+          
           <Routes>
             <Route path="/news" element={<News />} />
           </Routes>
