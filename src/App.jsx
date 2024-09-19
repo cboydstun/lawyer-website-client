@@ -44,8 +44,18 @@ function App() {
             <Route path="/more" element={<More />} />
           </Routes>
 
+    
+          <Routes>
+            <Route path="/news" element={<News />} />
+          </Routes>
 
-         
+          <Routes>
+            <Route path="/ratingsandreviews" element={<RatingsandReviews/>} />
+          </Routes>
+
+          <Routes>
+            <Route path="/MapsandDirections" element={<MapsandDirections/>} />
+          </Routes> 
 
       <div>
         <ContactUs/>

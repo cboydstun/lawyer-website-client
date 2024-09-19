@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const RatingsandReviews = () => {
   return (
@@ -8,6 +9,7 @@ const RatingsandReviews = () => {
       <p> RatingsandReviews</p>
     </div>
       
+      <p>Add the Ratings and Reviw API Here for AVVO</p>
     
     </div>
   )
