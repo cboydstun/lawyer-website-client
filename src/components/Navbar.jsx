@@ -6,8 +6,7 @@ import { Button, Navbar as Nav, Dropdown } from "react-daisyui";
 import MapsandDirections from "../components/MapsandDirections";
 import RatingsandReviews from "../components/RatingsandReviews";
 import News from "../components/News";
-import ContactUs from "../components/ContactUs"
-
+import ContactUs from "../components/ContactUs";
 
 //Creating the functions for the Navbar
 const Navbar = () => {
@@ -97,12 +96,20 @@ const Navbar = () => {
                 More
               </Link>
               <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
-                <Dropdown.Item><Link to="News.jsx">News</Link></Dropdown.Item>
-                <Dropdown.Item><Link to="RatingsandReviews.jsx">RatingsandReviews</Link></Dropdown.Item>
-                
-                <Dropdown.Item><Link to="ContactUs.jsx">Contact Us</Link></Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/News">News</Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/RatingsandReviews">RatingsandReviews</Link>
+                </Dropdown.Item>
 
-                <Dropdown.Item><Link to="MapsandDirections.jsx">MapsandDirections</Link></Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/ContactUs">Contact Us</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item>
+                  <Link to="/MapsandDirections">MapsandDirections</Link>
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
