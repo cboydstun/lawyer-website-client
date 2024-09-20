@@ -1,6 +1,6 @@
 //Importing the libraries for React
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { Button, Navbar as Nav, Dropdown } from "react-daisyui";
 import MapsandDirections from "../components/MapsandDirections";
@@ -13,6 +13,8 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const navigate = useNavigate()
+
   return (
     <>
       <Nav
@@ -62,7 +64,12 @@ const Navbar = () => {
                 Practice Areas
               </Link>
               <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
-                <Dropdown.Item>Divorce</Dropdown.Item>
+                <Dropdown.Item onClick={() => { 
+                  navigate ("/divorce")
+                 } }>
+                <Link to="/divorce">Divorce </Link>
+
+                  </Dropdown.Item>
                 <Dropdown.Item>
                   Department of Family and Protective Services (CPS)
                 </Dropdown.Item>
