@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
-
+import {Input, Button} from "react-daisyui"
 
 const ContactUs = () => {
     const [state, handleSubmit] = useForm("xwpejzay");
@@ -9,14 +9,15 @@ const ContactUs = () => {
     }
     return (
      
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='flex-col flex gap-2 w-40 justify-center items-center mx-auto'>
         <label htmlFor="email">
           <div>
-            <p>Contact Form for Clients</p>
+        <p>Contact Form for the Clients</p>
           </div>
           Email Address
         </label>
-        <input
+
+        <Input
           id="email"
           type="email" 
           name="email"
@@ -35,10 +36,10 @@ const ContactUs = () => {
           field="message"
           errors={state.errors}
         />
-        <button type="submit" disabled={state.submitting}>
+        <Button type="submit" color="primary" disabled={state.submitting}>
           Submit
-        </button>
-        
+        </Button>
+
         
 
 
