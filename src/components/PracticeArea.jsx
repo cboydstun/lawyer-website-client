@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 const PracticeArea = () => {
   return (
     <div style={{ backgroundColor: "gray" }}>
