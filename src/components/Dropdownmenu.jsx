@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-/*const Dropdownmenu = () => {
+const Dropdownmenu = () => {
   return (
     <div>
-      <p> Dropdownmenu</p>
+      <p>DropDown</p>
 <ul>
     <li><Link to="/divorce">Divorce</Link></li>
     <li><Link to="/family-law">Family Law</Link></li>
@@ -18,7 +19,7 @@ import React from "react";
     <li><Link to="/criminal-law">Criminal Law</Link></li>
     <li><Link to="/assault">Assult</Link></li>
     <li><Link to="/domestic-violence">Domest Violce</Link></li>
-    <li><Link to="/homocide">Homicide</Link></li>
+    <li><Link to="/homicide">Homicide</Link></li>
     <li><Link to="/traffice-violations">Traffic Violations</Link></li>
     <li><Link to="/drug-crimes">Drug Crimes</Link></li>
 </ul>
