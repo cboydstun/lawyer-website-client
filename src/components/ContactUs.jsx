@@ -12,11 +12,13 @@ const ContactUs = () => {
       onSubmit={handleSubmit}
       className="flex-col flex gap-2 w-40 justify-center items-center mx-auto"
     >
+      <br />
       <label htmlFor="email">
         <div>
           <p>Contact Form for the Clients</p>
+          <br />
         </div>
-        Email Address
+        <p>Email Address</p>
       </label>
 
       <Input id="email" type="email" name="email" />
@@ -26,6 +28,7 @@ const ContactUs = () => {
       <Button type="submit" color="primary" disabled={state.submitting}>
         Submit
       </Button>
+      <br />
     </form>
   );
 };

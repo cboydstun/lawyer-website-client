@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import "./components/Navbar.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Auth from "./components/Auth.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
@@ -13,7 +14,7 @@ import News from "./components/News.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import RatingsandReviews from "./components/RatingsandReviews.jsx";
 import MapsandDirections from "./components/MapsandDirections.jsx";
-import Divorce from "./components/Practice Area Pages/Divorce.jsx"
+import Divorce from "./components/Practice Area Pages/Divorce.jsx";
 import FamilyLaw from "./components/Practice Area Pages/FamilyLaw.jsx";
 import ChildCustody from "./components/Practice Area Pages/ChildCustody.jsx";
 import CriminalLaw from "./components/Practice Area Pages/CriminalLaw.jsx";
@@ -28,7 +29,6 @@ import Alimony from "./components/Practice Area Pages/Alimony.jsx";
 import Assault from "./components/Practice Area Pages/Assault.jsx";
 import CPS from "./components/Practice Area Pages/CPS.jsx";
 
-
 function App() {
   return (
     <>
@@ -38,8 +38,8 @@ function App() {
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/attorneyprofile" element={<Attorneyprofile />} /> 
-            <Route path="/practiceareas" element={<PracticeArea />}   />
+            <Route path="/attorneyprofile" element={<Attorneyprofile />} />
+            <Route path="/practiceareas" element={<PracticeArea />} />
             <Route path="/divorce" element={<Divorce />} />
             <Route path="/family-law" element={<FamilyLaw />} />
             <Route path="/adoption" element={<Adoption />} />
@@ -47,10 +47,13 @@ function App() {
             <Route path="/assault" element={<Assault />} />
             <Route path="/child-custody" element={<ChildCustody />} />
             <Route path="/cps" element={<CPS />} />
-            <Route path ="/criminal-law" element={<CriminalLaw />} />
+            <Route path="/criminal-law" element={<CriminalLaw />} />
             <Route path="/domestic-violence" element={<DomesticViolence />} />
             <Route path="/drug-crimes" element={<DrugCrimes />} />
-            <Route path="/equitable-distribution" element={<EquitableDistribution />} />
+            <Route
+              path="/equitable-distribution"
+              element={<EquitableDistribution />}
+            />
             <Route path="/homicide" element={<Homicide />} />
             <Route path="/protection-orders" element={<ProtectionOrders />} />
             <Route path="/traffic-violations" element={<TrafficViolations />} />
@@ -58,7 +61,8 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/ratingsandreviews" element={<RatingsandReviews />} />
             <Route path="/MapsandDirections" element={<MapsandDirections />} />
-        </Routes>
+            <Route path="/SignUp" element={<Auth />} />
+          </Routes>
 
           <div>
             <ContactUs />

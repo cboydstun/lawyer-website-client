@@ -21,7 +21,9 @@ console.log(json);
 console.log(err);
 }
 
-
+useEffect(() => {
+  getAllClients();
+}, []);
 
 
 
