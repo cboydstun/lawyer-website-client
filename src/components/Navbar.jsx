@@ -15,6 +15,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
   const navigate = useNavigate()
 
+//Styling Navbar
   return (
     <>
       <Nav
@@ -37,23 +38,28 @@ const Navbar = () => {
               />
             </svg>
           </Button>
-        </div>
+        </div> 
+
+        {/*Beginning of the Navbar*/}
         <Nav.Start>
           <Button tag="a" color="teal-900 h-5" className="normal-case text-xl">
             Jacqueline R. Kriebel
           </Button>
         </Nav.Start>
+
+        {/*End of the Navbar - Links to click around the website*/}
         <Nav.End>
           <div className="flex gap-2">
             <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
-              Home
+              Home 
             </Link>
 
             <Link to="/about" className="nav-links" onClick={() => {(
               closeMobileMenu () 
               )}}>
-              About
+              About 
             </Link>
+
             <Link
               to="/attorneyprofile"
               className="nav-links"
@@ -61,18 +67,12 @@ const Navbar = () => {
             >
               Attorney Profile
             </Link>
+
+            {/*Practice Areas drop down links*/}
             <Dropdown horizontal="left" vertical="bottom">
               <Link tag="label" tabIndex={0}>
                 Practice Areas
               </Link>
-
-              <Link
-              to="/clienttestimonials"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Client Testimonials
-            </Link>
 
               <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
                 <Dropdown.Item onClick={() => { 
@@ -161,6 +161,16 @@ const Navbar = () => {
               </Dropdown.Menu>  
             </Dropdown>
 
+            {/*Link for Client Testimonials*/}
+            <Link
+              to="/clienttestimonials"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Client Testimonials
+            </Link>
+
+            {/*Dropdown Menu for More */}
             <Dropdown horizontal="left" vertical="bottom">
               <Link tag="label" tabIndex={0}>
                 More
