@@ -15,6 +15,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
   const navigate = useNavigate()
 
+//Styling Navbar
   return (
     <>
       <Nav
@@ -37,21 +38,28 @@ const Navbar = () => {
               />
             </svg>
           </Button>
-        </div>
+        </div> 
+
+        {/*Beginning of the Navbar*/}
         <Nav.Start>
           <Button tag="a" color="teal-900 h-5" className="normal-case text-xl">
             Jacqueline R. Kriebel
           </Button>
         </Nav.Start>
+
+        {/*End of the Navbar - Links to click around the website*/}
         <Nav.End>
           <div className="flex gap-2">
             <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
-              Home
+              Home 
             </Link>
 
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              About
+            <Link to="/about" className="nav-links" onClick={() => {(
+              closeMobileMenu () 
+              )}}>
+              About 
             </Link>
+
             <Link
               to="/attorneyprofile"
               className="nav-links"
@@ -59,34 +67,101 @@ const Navbar = () => {
             >
               Attorney Profile
             </Link>
+
+            {/*Practice Areas drop down links*/}
             <Dropdown horizontal="left" vertical="bottom">
               <Link tag="label" tabIndex={0}>
                 Practice Areas
               </Link>
+
               <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
                 <Dropdown.Item onClick={() => { 
                   navigate ("/divorce")
                  } }>
                 <Link to="/divorce">Divorce </Link>
-
-                  </Dropdown.Item>
-                <Dropdown.Item>
-                  Department of Family and Protective Services (CPS)
                 </Dropdown.Item>
-                <Dropdown.Item>Child Custody</Dropdown.Item>
-                <Dropdown.Item>Criminal Law</Dropdown.Item>
-                <Dropdown.Item>Probate and Estate Administration</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-            {/* <Link
-              to="/practieareas"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Practice Areas
-              
-            </Link> */}
 
+                <Dropdown.Item onClick={() => {
+                  navigate ("/family-law")
+                }}>
+                <Link to="/family-law">Family Law</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/adoption")
+                }}>
+                  <Link to="/adoption"> Adoption</Link>
+                </Dropdown.Item>
+              
+                <Dropdown.Item onClick={() => {
+                  navigate ("/equitable-distribution")
+                }}>
+                <Link to="/equitable-distribution">Equitable Distribution</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/alimony")
+                }}>
+                  <Link to="/alimony">Alimony</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/protection-orders")
+                }}>
+                  <Link to="/protection-orders">Protection Orders</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/cps")
+                }}>
+                  <Link to="/cps">Department of Family and Protective Services</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/child-custody")
+                }}> 
+                  <Link to="/child-custody">Child Custody</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/criminal-law")
+                }}>
+                  <Link to="/criminal-law">Criminal Law</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/assault")
+                }}>
+                  <Link to="/assault">Assault</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/domestic-violence")
+                }}>
+                  <Link to="/domestic-violence">Domestic Violence</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/homicide")
+                }}>
+                  <Link to="/homicide">Homicide</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/traffic-violations")
+                }}>
+                  <Link to="/traffic-violations">Traffic Violations</Link>
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/drug-crimes")
+                }}>
+                  <Link to="/drug-crimes">Drug Crimes</Link>
+                </Dropdown.Item>
+              </Dropdown.Menu>  
+            </Dropdown>
+
+            {/*Link for Client Testimonials*/}
             <Link
               to="/clienttestimonials"
               className="nav-links"
@@ -95,26 +170,33 @@ const Navbar = () => {
               Client Testimonials
             </Link>
 
-            {/* <Link to="/more" className="nav-links" onClick={closeMobileMenu}>
-              More
-            </Link> */}
+            {/*Dropdown Menu for More */}
             <Dropdown horizontal="left" vertical="bottom">
               <Link tag="label" tabIndex={0}>
                 More
               </Link>
               <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
-                <Dropdown.Item>
+                <Dropdown.Item onClick={() => {
+                  navigate ("/news")
+                }}> 
                   <Link to="/News">News</Link>
                 </Dropdown.Item>
-                <Dropdown.Item>
+
+                <Dropdown.Item onClick={() => {
+                  navigate ("/RatingsandReviews")
+                }}>
                   <Link to="/RatingsandReviews">Ratings and Reviews</Link>
                 </Dropdown.Item>
 
-                <Dropdown.Item>
+                <Dropdown.Item onClick={() => {
+                  navigate ("/ContactUs")
+                }}>
                   <Link to="/ContactUs">Contact Us</Link>
                 </Dropdown.Item>
 
-                <Dropdown.Item>
+                <Dropdown.Item onClick={() => {
+                  navigate ("/MapsandDirections")
+                }}>
                   <Link to="/MapsandDirections">Maps and Directions</Link>
                 </Dropdown.Item>
               </Dropdown.Menu>
