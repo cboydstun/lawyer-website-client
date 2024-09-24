@@ -17,15 +17,15 @@ const Footer = () => {
   return (
     <div>
     <footer className=" bg-red-900 text-yellow-300 py-8 px-4 flex flex-col items-center overflow-x-hidden">
-      <div className="container mx-auto px-3 flex flex-col items-center">
+      <div className="max-w-screen-md container mx-auto px-3 flex flex-col items-center">
         <img 
           src={JCicon} 
           alt="icon image" 
-          className=" absolute left-4 w-24 h-26 mb-4"
+          className=" absolute left-11 w-24 h-26 mb-4"
         />
-       <a href="lawyer-website-client\src\components\Attorneyprofile.jsx" className="text-yellow-300 underline mb-4 absolute left-4 py-40">
+       <a href="lawyer-website-client\src\components\Attorneyprofile.jsx" className="text-yellow-300 underline mb-4 absolute left-11 py-40">
         Attorney Profile
-      </a>
+      </a> 
       <div className="text-center mb-8">
         <h2 className="text-xl font-bold mb-4">Client Reviews</h2>
       <div className="space-y-4">
