@@ -59,6 +59,11 @@ const Auth = (props) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <label>Phone Number</label>
+        <input
+          value={phoneNumber}
+          onChange={(e) => setPhoneNumber(e.target.value)}
+        />
         <button>Signup</button>
       </form>
     </div>

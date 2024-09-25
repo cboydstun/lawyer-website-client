@@ -1,10 +1,13 @@
 import React from "react";
+import NewsImage from "../assets/News.png"
 
 const News = () => {
   return (
     <div>
-      <iframe src="https://www.kens5.com/video/entertainment/television/great-day-sa/kriebel-law-firm/273-8284632" width="640" height="360" title="Embedded New Content">News</iframe>
+    <a href="https://www.kens5.com/video/entertainment/television/great-day-sa/kriebel-law-firm/273-8284632">
+    <img src={NewsImage} alt="News Image" />
       <p>News</p>
+      </a>
       <br />
       <a href="https://www.kens5.com/video/entertainment/television/great-day-sa/kriebel-law-firm/273-8284632">
         {" "}

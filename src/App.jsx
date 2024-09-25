@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"; //Import for REACT
+//Import Routes
 import "./App.css";
 import "./components/Navbar.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -29,6 +30,7 @@ import Alimony from "./components/Practice Area Pages/Alimony.jsx";
 import Assault from "./components/Practice Area Pages/Assault.jsx";
 import CPS from "./components/Practice Area Pages/CPS.jsx";
 
+//Function for Navbar
 function App() {
   return (
     <>
@@ -36,6 +38,8 @@ function App() {
         <Navbar />
         <div style={{ minHeight: "65vh" }}>
           <Routes>
+            {" "}
+            {/*Establishing Routes*/}
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/attorneyprofile" element={<Attorneyprofile />} />
