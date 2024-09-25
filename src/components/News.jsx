@@ -4,8 +4,10 @@ import NewsImage from "../assets/News.png"
 const News = () => {
   return (
     <div>
+    <a href="https://www.kens5.com/video/entertainment/television/great-day-sa/kriebel-law-firm/273-8284632">
     <img src={NewsImage} alt="News Image" />
       <p>News</p>
+      </a>
       <br />
       <a href="https://www.kens5.com/video/entertainment/television/great-day-sa/kriebel-law-firm/273-8284632">
         {" "}
