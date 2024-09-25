@@ -1,6 +1,7 @@
 import React from "react"; //Import React
 import "./Footer.css"; //Import CSS file
 import JCicon from "../assets/photos2.jpg" //Import photo
+import { Link } from "react-router-dom";
 
 //Creating review section
 const reviews = [
@@ -23,9 +24,9 @@ const Footer = () => {
           alt="icon image" 
           className=" absolute left-11 w-24 h-26 mb-4"
         />
-       <a href="lawyer-website-client\src\components\Attorneyprofile.jsx" className="text-yellow-300 underline mb-4 absolute left-11 py-40">
+       <Link to="/attorneyprofile" className="text-yellow-300 underline mb-4 absolute left-11 py-40">
         Attorney Profile
-      </a> 
+        </Link>
       <div className="text-center mb-8">
         <h2 className="text-xl font-bold mb-4">Client Reviews</h2>
       <div className="space-y-4">
