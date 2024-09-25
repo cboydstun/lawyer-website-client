@@ -64,7 +64,7 @@ const Auth = (props) => {
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
-        <button>Signup</button>
+        <button onClick={handleSignup}>Signup</button>
       </form>
     </div>
   );
