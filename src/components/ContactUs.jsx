@@ -15,7 +15,8 @@ const ContactUs = () => {
       <br />
       <label htmlFor="email">
         <div>
-          <p>Contact Form for the Clients</p>
+          <br/>
+<h2>Contact Form for the Clients</h2>
           <br />
         </div>
         <p>Email Address</p>
