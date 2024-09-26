@@ -29,6 +29,7 @@ import Adoption from "./components/Practice Area Pages/Adoption.jsx";
 import Alimony from "./components/Practice Area Pages/Alimony.jsx";
 import Assault from "./components/Practice Area Pages/Assault.jsx";
 import CPS from "./components/Practice Area Pages/CPS.jsx";
+import Juvenilelaw from "./components/Practice Area Pages/Juvenilelaw.jsx";
 
 //Function for Navbar
 function App() {
@@ -58,6 +59,7 @@ function App() {
               path="/equitable-distribution"
               element={<EquitableDistribution />}
             />
+            <Route path="/juvenile-law" element={<Juvenilelaw/>} />
             <Route path="/homicide" element={<Homicide />} />
             <Route path="/protection-orders" element={<ProtectionOrders />} />
             <Route path="/traffic-violations" element={<TrafficViolations />} />

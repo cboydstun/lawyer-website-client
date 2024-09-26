@@ -194,6 +194,14 @@ const Navbar = () => {
                 >
                   <Link to="/drug-crimes">Drug Crimes</Link>
                 </Dropdown.Item>
+
+                <Dropdown.Item
+                  onClick={() => {
+                    navigate("/juvenile-law")
+                  }}
+                  >
+                    <Link to="/juvenile-law">Juvenile Law</Link>
+                  </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
