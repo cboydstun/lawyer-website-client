@@ -22,6 +22,7 @@ const Dropdownmenu = () => {
     <li><Link to="/homicide">Homicide</Link></li>
     <li><Link to="/traffice-violations">Traffic Violations</Link></li>
     <li><Link to="/drug-crimes">Drug Crimes</Link></li>
+    <li><Link to="/juvenile-law"> Juvenile Law</Link></li>
 </ul>
     </div>
   );
