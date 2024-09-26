@@ -3,7 +3,7 @@ import React from "react";
 const Alimony = () => {
   return (
     <div>
-      <h1>Family law</h1>
+      <h1>Alimony</h1>
       <p>
         Assertive Texas Alimony Attorney Committed to Protecting Your Interests
         Dedicated Lawyer Assisting Clients in San Antonio with Spousal Support
