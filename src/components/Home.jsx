@@ -7,12 +7,12 @@ const Home = () => {
       Home
       <div>
         <HeroSection />
-        <h1>
+        <h1 className="text-3xl font-bold text-left">
           San Antonio Family Lawyer Delivers Strong Representation to Clients
         </h1>
       </div>
       <div>
-        <p>
+        <p className="text-lg font bold text-justify">
           Experienced attorney also advocates for clients in criminal defense
           cases and provides estate planning services When a legal issue
           involves your family or your freedom, it is crucial to retain the help
@@ -26,10 +26,10 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <p>
-          <h1>
-            Seasoned advocate provides exemplary service to Texas residents
-          </h1>
+        <h1 className="text-3xl font-bold text-left">
+          Seasoned advocate provides exemplary service to Texas residents
+        </h1>
+        <p className="text-lg font bold text-justify">
           My firm is focused on helping people from all walks of life in and
           around San Antonio with their legal concerns. My clients rely on my
           services because I am: Tenacious — Even in the most difficult cases
@@ -46,11 +46,11 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <h1>
+        <h1 className="text-3xl font-bold text-left">
           Attorney provides strong, knowledgeable representation for criminal
           and family Law cases
         </h1>
-        <p>
+        <p className="text-lg font bold text-justify">
           When what you value most is at risk, my firm delivers strong legal
           support to ease your stress. I have deep knowledge and experience in
           multiple practice areas, including: Family law — I handle family law
@@ -75,8 +75,10 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <h1>Contact a dedicated Texas advocate for a consultation</h1>
-        <p>
+        <h1 className="text-3xl font-bold text-left">
+          Contact a dedicated Texas advocate for a consultation
+        </h1>
+        <p className="text-lg font bold text-justify">
           At Kriebel Law Firm, PLLC, I represent clients in and around San
           Antonio with family law, criminal defense and estate planning matters.
           My office is conveniently located in the heart of San Antonio. To

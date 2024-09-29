@@ -3,8 +3,8 @@ import React from "react";
 const Adoption = () => {
   return (
     <div>
-      <h1>Adoption</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Adoption</h1>
+      <p className="text-lg font bold text-justify">
         Texas Attorney Navigates the Legal Complexities of Adoption Experienced
         Lawyer Assists Clients in the San Antonio Area in Expanding Their
         Families Adopting a child should be a joyous occasion, but unforeseen

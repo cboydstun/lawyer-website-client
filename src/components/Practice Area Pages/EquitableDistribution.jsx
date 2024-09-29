@@ -3,8 +3,8 @@ import React from "react";
 const EquitableDistribution = () => {
   return (
     <div>
-      <h1>Equitable Distribution</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Equitable Distribution</h1>
+      <p className="text-lg font bold text-justify">
         Texas Attorney Specializes in Equitable Property Distribution
         Experienced Divorce Lawyer Defending Your Rights in San Antonio In
         Texas, assets acquired and liabilities incurred during a marriage are

@@ -5,11 +5,11 @@ const ClientTestimonals = () => {
     <div style={{ backgroundColor: "gray" }}>
       ClientTestimonals
       <div>
-        <h1>
+        <h1 className="text-3xl font-bold text-left">
           Very Upfront – She Advises You Not What You Want To Hear, But What You
           Need To Do
         </h1>
-        <p>
+        <p className="text-lg font bold text-justify">
           I was hit with a surprise divorce petition which cast me in the most
           negative matter in order to gain assets and possible maintenance from
           me. I'm glad I chose Ms. Jacqueline Kriebel. She was upfront,
@@ -21,8 +21,8 @@ const ClientTestimonals = () => {
         </p>
       </div>
       <div>
-        <h1>Highly Recommend!! Quick Divorce And Excellent Service!</h1>
-        <p>
+        <h1 className="text-3xl font-bold text-left">Highly Recommend!! Quick Divorce And Excellent Service!</h1>
+        <p className="text-lg font bold text-justify">
           My husband and I were seeking an attorney who was reasonable and
           efficient. We agreed on most issues and just had a couple legal
           questions regarding property division. I don't really trust attorneys
@@ -40,8 +40,8 @@ const ClientTestimonals = () => {
         </p>
       </div>
       <div>
-        <h1>Jacqueline Kriebel You ARE The Greatest!</h1>
-        <p>
+        <h1 className="text-3xl font-bold text-left">Jacqueline Kriebel You ARE The Greatest!</h1>
+        <p className="text-lg font bold text-justify">
           I'm 62 years old and have had many attorneys over the past 62 years of
           my life. I have had BAD experiences with attorneys until I met Ms.
           Kriebel. Jacqueline kept us informed with all that was going on it our
@@ -54,15 +54,15 @@ const ClientTestimonals = () => {
         </p>
       </div>
       <div>
-        <h1>Superstar!!</h1>
-        <p>
+        <h1 className="text-3xl font-bold text-left">Superstar!!</h1>
+        <p className="text-lg font bold text-justify">
           Jacqueline Kriebel is a Superstar family attorney. She took all the
           correct legal steps to bring a quick and favorable resolution to my
           case in the absence of a mutual agreement. She communicated with me
           efficiently and provided legal guidance every step of the way. She is
           very knowledgeable and professional. She addressed issues in court as
           they arose effectively. I am very pleased with her overall service. -
-          Family client (5-star review)
+          Family client (5-star review).
         </p>
       </div>
     </div>

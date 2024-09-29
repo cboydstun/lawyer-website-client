@@ -3,8 +3,8 @@ import React from "react";
 const CriminalLaw = () => {
   return (
     <div>
-      <h1>Criminal Law</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Criminal Law</h1>
+      <p className="text-lg font bold text-justify">
         Being Charged with a Criminal Offense is Life-Changing Facing Criminal
         Charges? Protect Your Freedom. If you’re under suspicion for a crime,
         the fear of losing your freedom can be overwhelming. A conviction could
