@@ -3,8 +3,8 @@ import React from "react";
 const DrugCrimes = () => {
   return (
     <div>
-      <h1>Family law</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Drug Crimes</h1>
+      <p className="text-lg font bold text-justify">
         Aggressive Texas Law Firm Defending Clients Accused of Drug Crimes
         Assertive Defense Attorney Fighting for Your Rights in the San Antonio
         Area Drug charges are serious and can lead to severe consequences,

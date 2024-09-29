@@ -3,8 +3,8 @@ import React from "react";
 const ChildCustody = () => {
   return (
     <div>
-      <h1>Child Custody</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Child Custody</h1>
+      <p className="text-lg font bold text-justify">
         Navigating Complex and Emotionally Charged Child Custody Matters
         Protecting Fathers' Rights in Texas In Texas, understanding the laws
         governing child custody can be a daunting task. Custody arrangements may

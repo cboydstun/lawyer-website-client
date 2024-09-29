@@ -3,8 +3,8 @@ import React from "react";
 const TrafficViolations = () => {
   return (
     <div>
-      <h1>Traffic Violations</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Traffic Violations</h1>
+      <p className="text-lg font bold text-justify">
         Assertive Texas Attorney Defending Clients Accused of Traffic Violations
         Lawyer Fighting Tickets and Criminal Charges for Clients in the San
         Antonio Area Traffic tickets and moving violations can significantly

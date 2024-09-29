@@ -3,8 +3,8 @@ import React from "react";
 const Assault = () => {
   return (
     <div>
-      <h1>Assault</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Assault</h1>
+      <p className="text-lg font bold text-justify">
         South Texas Criminal Defense Lawyer Fighting for Assault Defendants
         Dedicated San Antonio Attorney Advocates Aggressively Against Assault
         Charges Facing assault charges can be a life-altering experience,

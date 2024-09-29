@@ -3,8 +3,8 @@ import React from "react";
 const CPS = () => {
   return (
     <div>
-      <h1>Child Protective Services</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Child Protective Services</h1>
+      <p className="text-lg font bold text-justify">
         Has the Department of Family and Protective Services Contacted You?
         Protect Your Family with Experienced Legal Guidance In Texas, the
         Department of Family and Protective Services (DFPS) is tasked with

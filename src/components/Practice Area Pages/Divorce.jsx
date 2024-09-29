@@ -3,9 +3,9 @@ import React from "react";
 const Divorce = () => {
   return (
     <div>
-      <h1>Divorce</h1>
-      <h2>Efficient and Effective Solutions for Your Divorce Matters</h2>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Divorce</h1>
+      <h2 className="text-3xl font-bold text-left">Efficient and Effective Solutions for Your Divorce Matters</h2>
+      <p className="text-lg font bold text-justify">
         Divorce: Navigating a divorce can be incredibly challenging, often
         involving intense conflicts. Even in amicable situations, having a
         seasoned divorce attorney by your side is crucial to safeguarding your
@@ -23,8 +23,9 @@ const Divorce = () => {
         is a tumultuous time that often encompasses a variety of complex issues.
         Custody disputes, property division, and spousal maintenance are just a
         few aspects that can arise. In cases involving abuse or infidelity, the
-        stakes become even higher, especially when children are involved. In
-        these emotionally charged situations, having a San Antonio divorce
+        stakes become even higher, especially when children are involved. </p>
+        <p className="text-lg font bold text-justify">
+        In these emotionally charged situations, having a San Antonio divorce
         attorney with trial experience is essential. Attorney Kriebel can guide
         you through critical matters, including: Property Division: Addressing
         real estate, vehicles, family businesses, retirement accounts, stocks,
@@ -34,8 +35,10 @@ const Divorce = () => {
         Enforcement: Updating or enforcing existing court orders. If your safety
         is at risk, Attorney Kriebel can assist in obtaining protective orders.
         Conversely, if you have been served with a protective order and need
-        guidance, contact Kriebel Law Firm, PLLC, immediately. Attorney Kriebel
-        is committed to providing candid advice about your case and preparing
+        guidance, contact Kriebel Law Firm, PLLC, immediately. 
+        </p>
+        <p className="text-lg font bold text-justify">
+        Attorney Kriebel is committed to providing candid advice about your case and preparing
         you for legal proceedings. With children's welfare at the forefront, she
         will ensure that their best interests are prioritized throughout the
         process. Considering an Uncontested Divorce? If you and your spouse
