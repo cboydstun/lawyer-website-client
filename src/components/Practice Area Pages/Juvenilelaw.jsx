@@ -3,8 +3,8 @@ import React from "react";
 const Juvenilelaw = () => {
   return (
     <div>
-      <h1>Juvenile Law</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Juvenile Law</h1>
+      <p className="text-lg font bold text-justify">
         Texas Attorney Advocates for Juveniles in the Justice System Dedicated
         legal representation for minors in the San Antonio area Juvenile law
         recognizes that young individuals should be treated differently from

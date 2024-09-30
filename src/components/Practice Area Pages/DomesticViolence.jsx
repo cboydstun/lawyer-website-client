@@ -3,8 +3,8 @@ import React from "react";
 const DomesticViolence = () => {
   return (
     <div>
-      <h1>Domestic Violence</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Domestic Violence</h1>
+      <p className="text-lg font bold text-justify">
         Determined Texas Attorney Defending Against Domestic Violence Charges
         Tenacious Law Firm Providing Strong Representation for Clients in San
         Antonio Facing domestic violence accusations can lead to severe criminal

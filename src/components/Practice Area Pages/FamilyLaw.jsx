@@ -3,8 +3,8 @@ import React from "react";
 const FamilyLaw = () => {
   return (
     <div>
-      <h1>Family law</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Family law</h1>
+      <p className="text-lg font bold text-justify">
         Extensive Knowledge and Experience in Family Law to Lighten Your Load
         Navigating family disputes can be one of life's most stressful
         challenges. Are you uncertain about how to handle your divorce?
@@ -18,6 +18,8 @@ const FamilyLaw = () => {
         orders, or modify existing orders as your family dynamics evolve. In
         cases where disputes escalate to domestic violence, Ms. Kriebel will
         take decisive action to protect your family through protective orders.
+        </p>
+        <p className="text-lg font bold text-justify">
         If you're facing challenges with the Department of Family and Protective
         Services, her extensive experience will ensure your rights are fiercely
         defended. Committed to Efficiently Resolving Your Family Law Issues Ms.
@@ -29,7 +31,8 @@ const FamilyLaw = () => {
         trusted guidance and representation for a wide range of Texas family law
         cases, including: Divorce — Uncontested and contested divorce, including
         military divorce considerations Complex Property Division — Fair and
-        equitable distribution of real property, assets, and debts Spousal
+        equitable distribution of real property, assets, and debts Spousal </p>
+        <p className="text-lg font bold text-justify">
         Maintenance — Accurate assessments regarding the amount and duration of
         orders Child Custody and Support — Fathers' rights, paternity issues,
         parental alienation, joint or managing conservatorships, modifications

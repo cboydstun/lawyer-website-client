@@ -3,8 +3,8 @@ import React from "react";
 const ProtectionOrders = () => {
     return (
         <div>
-            <h1>Protection Orders</h1>
-            <p>  Texas Family Law Attorney Advocating for Clients in Need of Protection
+            <h1 className="text-3xl font-bold text-left">Protection Orders</h1>
+            <p className="text-lg font bold text-justify">  Texas Family Law Attorney Advocating for Clients in Need of Protection
         Relentless Lawyer Defending Victims in the San Antonio Area If you fear
         for your safety due to threats or abuse from someone you know, the
         Kriebel Law Firm, PLLC is ready to act swiftly to protect you and your

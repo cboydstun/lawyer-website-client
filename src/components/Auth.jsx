@@ -43,28 +43,47 @@ const Auth = (props) => {
           i.preventDefault();
           handleSignup();
         }}
-        style={{ display: "flex", flexDirection: "column" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          borderStyle: "solid",
+        }}
       >
-        <label>Username</label>
-        <input value={username} onChange={(i) => setUsername(i.target.value)} />
-        <label>Email</label>
+        <label className="label first-line:left-7">Username:</label>
         <input
           required
-          value={email}
+          type="username"
+          className="input input-bordered w-full max-w-xs"
+          placeholder="Enter Username"
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <label className="label first-line:left-7">Email:</label>
+        <input
+          type="email"
+          className="input input-bordered w-full max-w-xs"
+          placeholder="Enter Email"
+          required
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label>Password</label>
+        <label className="label first-line:left-7">Password:</label>
         <input
           required
-          value={password}
+          type="password"
+          className="input input-bordered w-full max-w-xs"
+          placeholder="Enter Password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <label>Phone Number</label>
+        <label className="label first-line:left-7">Phone Number:</label>
         <input
+          type="phoneNumber"
+          className="input input-bordered w-full max-w-xs"
+          placeholder="Phone Number"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
-        <button onClick={handleSignup}>Signup</button>
+        <button type="submit" className="btn-outline btn-success btn btn-wide">
+          Sign Up
+        </button>
       </form>
     </div>
   );

@@ -26,12 +26,11 @@ const Attorneyprofile = () => {
       <div>
         <h1 style={styles.heading}>
         <img src={JCicon} alt="icon image "/> 
-          Jacqueline R. Kriebel 
-          Attorney Phone 210-677-5586 Fax 210-467-5788
+          Jacqueline R. Kriebel Attorney Phone 210-677-5586 Fax 210-467-5788
           Email Jacqueline R. Kriebel
         </h1>
              
-        <p style={styles.paragraph}>
+        <p>
           Jacqueline Kriebel is originally from Pennsylvania, where she
           developed a spirited work ethic and aggressive style of
           representation. She is dedicated to providing a client-centered
@@ -44,7 +43,7 @@ const Attorneyprofile = () => {
         </p>
       </div>
       <div>
-        <p style={styles.paragraph}>
+        <p>
           Additionally, Jacqueline Kriebel aggressively cross-examines witnesses
           and attacks their credibility to consistently win at trial. Because of
           her experience as a former teacher, Jacqueline Kriebel knows how to
@@ -57,8 +56,8 @@ const Attorneyprofile = () => {
         </p>
       </div>
       <div>
-        <h1 style={styles.heading}>Areas of Practice</h1>
-        <p style={styles.paragraph}>
+        <h1>Areas of Practice</h1>
+        <p>
           <li>Divorce</li>
           <li>Child Support & Custody & Modifications</li>
           <li>Criminal Defense</li>
@@ -66,13 +65,14 @@ const Attorneyprofile = () => {
         </p>
       </div>
       <div>
-        <h1 style={styles.heading}>Bar Admissions</h1>
+        <h1>Bar Admissions</h1>
         <li>Texas, 2004</li>
         <li>U.S. District Court Western District of Texas</li>
+      </p>
       </div>
       <div>
-        <h1 style={styles.heading}>Education</h1>
-        <p style={styles.paragraph}>
+        <h1>Education</h1>
+        <p>
           <li>
             St. Mary's University School of Law, San Antonio, Texas J.D. - 2004
           </li>
@@ -83,8 +83,8 @@ const Attorneyprofile = () => {
         </p>
       </div>
       <div>
-        <h1 style={styles.heading}>Honors and Awards</h1>
-        <p style={styles.paragraph}>
+        <h1>Honors and Awards</h1>
+        <p>
           <li>Superb Rated Attorney, 2015 - Present</li>
           <li>10 Best Family Law Attorneys, 2018 - Present</li>
           <li>10 Best Attorneys, 2018 - Present</li>
@@ -92,14 +92,14 @@ const Attorneyprofile = () => {
         </p>
       </div>
       <div>
-        <h1 style={styles.heading}>Professional Associations and Memberships</h1>
-        <p style={styles.paragraph}>
+        <h1>Professional Associations and Memberships</h1>
+        <p>
           <li>San Antonio Bar Association</li>
         </p>
       </div>
       <div>
-        <h1 style={styles.heading}>Past Employment Positions</h1>
-        <p style={styles.paragraph}>
+        <h1>Past Employment Positions</h1>
+        <p>
           <li>Martin & Drought, P.C, Associate Attorney, 2004 - 2007</li>
         </p>
       </div>

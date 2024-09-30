@@ -31,6 +31,9 @@ const About = () => {
         <img
           src={JacqulineRKriebleImage}
           alt="Image of Jacqueline R. Kriebel"
+          class="center"
+          height={350}
+          width={250}
         />
       </div>
       <div>
@@ -46,6 +49,9 @@ const About = () => {
             dignity regardless of what their legal situation is.
           </p>
         </div>
+        <h1 className="text-3xl font-bold text-left">
+          More About Jacqueline R. Kriebel
+        </h1>
         <div>
           <p style={styles.paragraph}>
             She will return your phone call as soon as is practical. She will
@@ -69,7 +75,7 @@ const About = () => {
             health caseworker and a counselor at a shelter for battered women.
             She remains active in the Texas community and has two children of
             her own. You may read more about Ms. Kriebel's professional
-            background by following the link below: Jacqueline R. Kriebel
+            background by following the link below: Jacqueline R. Kriebel.
           </p>
         </div>
         <div>

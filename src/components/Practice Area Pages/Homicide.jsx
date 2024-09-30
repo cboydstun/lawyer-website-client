@@ -3,8 +3,8 @@ import React from "react";
 const Homicide = () => {
   return (
     <div>
-      <h1>Homicide</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Homicide</h1>
+      <p className="text-lg font bold text-justify">
         Determined Texas Criminal Defense Lawyer Fighting for Clients Facing
         Homicide Charges Experienced Litigator Defending Clients in the San
         Antonio Area Accused of Unlawful Killing Homicide, defined as the

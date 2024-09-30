@@ -80,7 +80,7 @@ const ClientTestimonals = () => {
           efficiently and provided legal guidance every step of the way. She is
           very knowledgeable and professional. She addressed issues in court as
           they arose effectively. I am very pleased with her overall service. -
-          Family client (5-star review)
+          Family client (5-star review).
         </p>
       </div>
     </div>

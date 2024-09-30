@@ -8,8 +8,8 @@ const Alimony = () => {
   }
   return (
     <div>
-      <h1>Alimony</h1>
-      <p>
+      <h1 className="text-3xl font-bold text-left">Alimony</h1>
+      <p className="text-lg font bold text-justify">
         Assertive Texas Alimony Attorney Committed to Protecting Your Interests
         Dedicated Lawyer Assisting Clients in San Antonio with Spousal Support
         Matters Divorce involves crucial decisions that can significantly affect
