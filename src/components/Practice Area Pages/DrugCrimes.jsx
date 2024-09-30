@@ -3,18 +3,22 @@ import React from "react";
 const DrugCrimes = () => {
   return (
     <div>
-      <h1>Family law</h1>
+      <h1>Drug Crimes</h1>
       <p>
         Aggressive Texas Law Firm Defending Clients Accused of Drug Crimes
         Assertive Defense Attorney Fighting for Your Rights in the San Antonio
         Area Drug charges are serious and can lead to severe consequences,
         including fines, jail time, job loss, school expulsion, and strained
         relationships. However, even in challenging situations, viable defenses
-        exist. Entrusting your case to an experienced attorney significantly
+        exist.
+        
+        Entrusting your case to an experienced attorney significantly
         enhances your chances of a favorable outcome. At Kriebel Law Firm, PLLC,
         I work diligently to have confessions dismissed and to seek reductions
         or dismissals of charges. Additionally, I aim to place clients in
-        rehabilitation programs instead of incarceration. If you’ve been accused
+        rehabilitation programs instead of incarceration. 
+        
+         If you’ve been accused
         of a drug-related crime in the San Antonio area or anywhere in Texas,
         I’m here to provide the dedicated defense you deserve. Committed Texas
         Lawyer Providing Relentless Defense of Your Rights Facing drug charges
@@ -41,7 +45,9 @@ const DrugCrimes = () => {
         every turn, examining whether the police had a legal reason for the
         stop, if any confession was coerced, or if unreliable informants were
         involved in your arrest. These factors can significantly impact the
-        outcome of your case. Contact a Strong Texas Criminal Defense Lawyer if
+        outcome of your case. 
+        
+        Contact a Strong Texas Criminal Defense Lawyer if
         You Face a Drug Charge If you’ve been charged with a drug crime, your
         future is at stake. At Kriebel Law Firm, PLLC in San Antonio, I will
         passionately represent your interests in court and help you reclaim your

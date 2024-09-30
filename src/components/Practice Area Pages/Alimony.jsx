@@ -1,6 +1,11 @@
 import React from "react";
 
 const Alimony = () => {
+  const styles = {
+    container: {
+      
+    }
+  }
   return (
     <div>
       <h1>Alimony</h1>

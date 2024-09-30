@@ -1,10 +1,30 @@
 import React from "react";
 
 const Adoption = () => {
+  const styles = {
+    container: {
+      maxWidth: '800px',
+      margin: '0 auto',
+      padding: '20px',
+      fontFamily: 'Arial, sans-serif',
+      lineHeight: 1.6,
+    },
+    heading: {
+      color: '#2c3e 50',
+      fontSize: '2.5em',
+      marginBottom: '20px',
+    },
+    paragraph: {
+      color: '#34495e',
+      fontSize: '1.1em',
+      marginBottom: '15px',
+    },
+  };
   return (
-    <div>
-      <h1>Adoption</h1>
-      <p>
+    <div style={styles.container}>
+        <h1 style={styles.heading}>Adoption</h1>
+        <div>
+          <p style={styles.paragraph}>
         Texas Attorney Navigates the Legal Complexities of Adoption Experienced
         Lawyer Assists Clients in the San Antonio Area in Expanding Their
         Families Adopting a child should be a joyous occasion, but unforeseen
@@ -22,8 +42,13 @@ const Adoption = () => {
         adoptions Domestic adoptions International adoptions Stepparent
         adoptions I understand the legal criteria that must be satisfied in each
         case and will provide you with the reliable counsel necessary to achieve
-        your goals. Committed Attorney for Termination of Parental Rights The
-        possibility of birth parents challenging an adoption post-finalization
+        your goals. 
+        </p>
+        </div>
+        <div>
+          <h2 style={styles.heading}>Committed Attorney for Termination of Parental Rights </h2>
+          <p style={styles.paragraph}>
+             The possibility of birth parents challenging an adoption post-finalization
         is a legitimate concern for adoptive families. Poorly managed adoptions
         can cause immense emotional turmoil for everyone involved—the adoptive
         parents, birth parents, and children caught in the middle. At Kriebel
@@ -31,9 +56,12 @@ const Adoption = () => {
         adoptive parents are respected, resulting in a final adoption that is
         secure and unassailable. I will confirm that birth parents consent to
         the adoption freely and voluntarily, protecting against claims of fraud,
-        duress, or coercion that could jeopardize the adoption. Skilled Advocate
-        for Overcoming Biological Father's Resistance A biological father holds
-        the same parental rights as the mother, especially if he is listed in
+        duress, or coercion that could jeopardize the adoption.
+        </p>
+        <div>
+          <h3 style={styles.heading}>Skilled Advocate for Overcoming Biological Father's Resistance </h3>
+          <p style={styles.paragraph}>
+             A biological father holds the same parental rights as the mother, especially if he is listed in
         the state’s putative father registry and has been actively involved in
         the child's life. While engaged fathers may oppose adoption, less
         involved fathers may willingly relinquish their parental rights to
@@ -41,8 +69,13 @@ const Adoption = () => {
         terminate his parental rights if he is deemed unfit and severing the
         parent-child relationship serves the child's best interests. I will take
         all necessary measures to identify biological fathers, secure their
-        consent, or litigate issues of fitness when appropriate. Established
-        Firm for Diverse Domestic Adoption Types An open adoption agreement
+        consent, or litigate issues of fitness when appropriate.
+        </p>
+        </div>
+        </div>
+        <div>
+         <h4 style={styles.heading}>Established Firm for Diverse Domestic Adoption Types </h4>
+         <p style={styles.paragraph}>  An open adoption agreement
         allows the biological family to maintain a relationship with the child,
         with terms defined in a written contract that can vary from regular
         visits to yearly updates. Conversely, a closed adoption safeguards the
@@ -57,14 +90,19 @@ const Adoption = () => {
         provide you with expert advice on both domestic and international
         requirements, standing by your side to navigate every step of the
         process and mitigate potential issues. My objective is to facilitate the
-        timely and lawful arrival of your child into your family. Contact a
-        Tenacious Texas Adoption Attorney While adoption can bring immense joy
+        timely and lawful arrival of your child into your family.
+        </p>
+        </div>
+        <div>
+          <h5 style={styles.heading}>Contact a Tenacious Texas Adoption Attorney </h5>
+        <p style={styles.paragraph}> While adoption can bring immense joy
         to your family, it requires navigating a myriad of legal requirements.
         Kriebel Law Firm, PLLC in San Antonio offers steadfast legal counsel for
         clients across Texas seeking to adopt. Call 210-677-5586 or reach out
         online to schedule a consultation today.
-      </p>
-    </div>
+        </p>
+        </div>
+        </div>
   );
 };
 
