@@ -5,6 +5,7 @@ const Attorneyprofile = () => {
     <div style={{ backgroundColor: "gray" }}>
       Attorneyprofile
       <div>
+        <div>
         <h1 className="text-3xl font-bold text-left">
         <img src={JCicon} alt="icon image "/> 
           Jacqueline R. Kriebel Attorney
@@ -13,8 +14,9 @@ const Attorneyprofile = () => {
           <br/>
           Fax 210-467-5788
           <br/>
-          Email Jacqueline R. Kriebel
+          <a href="mailto:jacquelinekriebel@gmail.com">E-mail:Jacqueline R. Kriebel</a>
         </h1>
+        </div>
              
         <p className="text-lg font bold text-justify">
           Jacqueline Kriebel is originally from Pennsylvania, where she

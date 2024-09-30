@@ -5,11 +5,11 @@ import JcIcon from "../assets/Kriebellaw.png";
 const About = () => {
   return (
     <div style={{ backgroundColor: "gray" }}>
-        <img src={JcIcon} alt="Icon Image" 
+        {/* <img src={JcIcon} alt="Icon Image" 
         class="center"
         height={500}
         width={300}
-        />
+        /> */}
       About
       <div className="flex justify-center gap-5">
         <img
