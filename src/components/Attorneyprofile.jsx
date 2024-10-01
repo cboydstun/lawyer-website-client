@@ -14,7 +14,7 @@ const Attorneyprofile = () => {
           <br/>
           Fax 210-467-5788
           <br/>
-          <a href="mailto:jacquelinekriebel@gmail.com">E-mail:Jacqueline R. Kriebel</a>
+          <a className="text-3xl font-bold text-left" href="mailto:jacquelinekriebel@gmail.com">E-mail:Jacqueline R. Kriebel</a>
         </h1>
         </div>
              

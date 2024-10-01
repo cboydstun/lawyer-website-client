@@ -3,8 +3,11 @@ import HeroSection from "./HeroSection.jsx";
 
 const Home = () => {
   return (
-    <div style={{ backgroundColor: "gray" }}>
-      Home
+    <div className="flex-col items-center gap-10" style={{ backgroundColor: "gray" }}>
+      <div>
+        <p> Home</p>
+      </div>
+     
       <div>
         <HeroSection />
         <h1 className="text-3xl font-bold text-left">
