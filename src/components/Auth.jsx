@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Auth = (props) => {
   const [username, setUsername] = useState("");
@@ -7,6 +7,8 @@ const Auth = (props) => {
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
   const [isAdmin, setIsAdmin] = useState("");
+  const [text, setText] = useState("");
+  const [results, setResults] = useState([]);
 
   const handleSignup = async () => {
     try {
@@ -24,16 +26,50 @@ const Auth = (props) => {
         }),
       });
 
+      let json = await result.json();
+
+      setResults(json.Results);
+      console.log(json);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+    getAllClients();
+  }, []);
+  const getAllClients = async (e) => {
+    try {
+      console.log("popcorn");
+
+      let result = await fetch("http://localhost:8080/user/api/users", {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
       const json = await result.json();
       if (json.Error) {
         throw new Error(error.json);
       }
 
       console.log(json);
-      props.updateToken(json.Token);
+      setResults(json);
+      console.log("hi");
+      // props.updateToken(json.Token);
     } catch (err) {
+      console.log(err);
       setErrorMsg(err.message);
     }
+  };
+
+  const displayUsers = () => {
+    return results.map((user) => (
+      <div
+        style={{ border: ".3em solid black", padding: "2em" }}
+        key={user._id}
+      >
+        <h2>{user.username}</h2>
+      </div>
+    ));
   };
 
   return (
@@ -85,6 +121,23 @@ const Auth = (props) => {
           Sign Up
         </button>
       </form>
+
+      <div>
+        <form>
+          <input value={text} onChange={(e) => setText(e.target.value)} />
+
+          <button
+            type="button"
+            onClick={() => {
+              console.log("hello");
+              getAllClients();
+            }}
+          >
+            Submit
+          </button>
+        </form>
+        {displayUsers()}
+      </div>
     </div>
   );
 };

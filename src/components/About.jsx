@@ -24,20 +24,19 @@ const About = () => {
   };
   return (
     <div style={{ backgroundColor: "gray" }}>
-        <img src={JcIcon} alt="Icon Image" 
-        class="center"
+        <img className="rounded-full" src={JcIcon} alt="Image" 
         height={500}
         width={300}
         />
       About
       <div className="flex justify-center gap-5">
-        <img
+        {/* <img
           src={JacqulineRKriebleImage}
           alt="Image of Jacqueline R. Kriebel"
           class="center"
           height={350}
           width={250}
-        />
+        /> */}
       </div>
       <div>
         <h1 style={styles.heading}>Meet Jacqueline R. Kriebel</h1>

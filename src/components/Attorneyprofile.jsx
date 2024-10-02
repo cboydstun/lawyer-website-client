@@ -23,13 +23,13 @@ const Attorneyprofile = () => {
   };
   return (
     <div style={styles.container}>
-        <h1 style={styles.heading} Attorney profile></h1>
+        <h1 style={styles.heading}>Attorney profile</h1>
           <div>
         <img src={JCicon} alt="icon image "/> 
          <p> Jacqueline R. Kriebel </p>
          <p>Attorney Phone 210-677-5586 </p>
          <p>Fax 210-467-5788 </p>
-         <p> Email Jacqueline R. Kriebel </p>
+         <p> E-mail:Jacqueline R. jacquelinekriebel@gmail.com </p>
         </div>
           <div>   
         <p style={styles.paragraph}>
