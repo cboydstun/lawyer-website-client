@@ -30,12 +30,12 @@ const About = () => {
   };
   return (
     <div style={styles.container}>
-        <div style={styles.imageContainer}>
+        <div className="rounded-full flex justify-center gap-20" style={styles.imageContainer}>
           <img 
-          className="rounded-full"
+          className="rounded-full flex justify-center gap-20"
           src={JcIcon}
           alt="Image"
-          height={500}
+          height={450}
         width={300}
         />
         </div>
