@@ -21,24 +21,24 @@ const About = () => {
       fontSize: '1.1em',
       marginBottom: '15px',
     },
+    imageContainer: {
+      display:'flex',
+      justifycontent: 'center',
+      alignItems:'center',
+      marginBottom: '20px',
+    },
   };
   return (
-    <div style={{ backgroundColor: "gray" }}>
-        <img className="rounded-full" src={JcIcon} alt="Image" 
-        height={500}
+    <div style={styles.container}>
+        <div style={styles.imageContainer}>
+          <img 
+          className="rounded-full"
+          src={JcIcon}
+          alt="Image"
+          height={500}
         width={300}
         />
-      About
-      <div className="flex justify-center gap-5">
-        {/* <img
-          src={JacqulineRKriebleImage}
-          alt="Image of Jacqueline R. Kriebel"
-          class="center"
-          height={350}
-          width={250}
-        /> */}
-      </div>
-      <div>
+        </div>
         <h1 style={styles.heading}>Meet Jacqueline R. Kriebel</h1>
         <div>
           <p style={styles.paragraph}>
@@ -51,7 +51,7 @@ const About = () => {
             dignity regardless of what their legal situation is.
           </p>
         </div>
-        <h1 className="text-3xl font-bold text-left">
+        <h1 style={styles.heading}>
           More About Jacqueline R. Kriebel
         </h1>
         <div>
@@ -81,8 +81,8 @@ const About = () => {
           </p>
         </div>
         <div>
-          <p>
             <h1 style={styles.heading}>You Deserve an Experienced Attorney You Can Trust</h1>
+          <p>
             It is important to have a divorce lawyer on your side to help you
             understand what you might face. Attorney Kriebel can help you. She
             helps people from all walks of life who are living or working in San
@@ -103,14 +103,12 @@ const About = () => {
             consultation.
           </p>
         </div>
-
         <div>
           <form action="" method="get">
             Contact Form
           </form>
         </div>
       </div>
-    </div>
   );
 };
 
