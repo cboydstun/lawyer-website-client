@@ -2,20 +2,35 @@ import React from "react";
 import HeroSection from "./HeroSection.jsx";
 
 const Home = () => {
+  const styles = {
+    container: {
+      maxWidth: '800px',
+      margin: '0 auto',
+      padding: '20px',
+      fontFamily: 'Arial, sans-serif',
+      lineHeight: 1.6,
+    },
+    heading: {
+      color: '#2c3e 50',
+      fontSize: '2.5em',
+      marginBottom: '20px',
+    },
+    paragraph: {
+      color: '#34495e',
+      fontSize: '1.1em',
+      marginBottom: '15px',
+    },
+  };
   return (
-    <div className="flex-col items-center gap-10" style={{ backgroundColor: "gray" }}>
-      <div>
-        <p> Home</p>
-      </div>
-     
+    <div style={styles.container}>
       <div>
         <HeroSection />
-        <h1 className="text-3xl font-bold text-left">
+        <h1 style={styles.heading}>
           San Antonio Family Lawyer Delivers Strong Representation to Clients
         </h1>
       </div>
       <div>
-        <p className="text-lg font bold text-justify">
+        <p style={styles.paragraph}>
           Experienced attorney also advocates for clients in criminal defense
           cases and provides estate planning services When a legal issue
           involves your family or your freedom, it is crucial to retain the help
@@ -29,10 +44,10 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-3xl font-bold text-left">
-          Seasoned advocate provides exemplary service to Texas residents
-        </h1>
-        <p className="text-lg font bold text-justify">
+        <p style={styles.paragraph}>
+          <h1 style={styles.heading}>
+            Seasoned advocate provides exemplary service to Texas residents
+          </h1>
           My firm is focused on helping people from all walks of life in and
           around San Antonio with their legal concerns. My clients rely on my
           services because I am: Tenacious — Even in the most difficult cases
@@ -49,11 +64,11 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-3xl font-bold text-left">
+        <h1 style={styles.heading}>
           Attorney provides strong, knowledgeable representation for criminal
           and family Law cases
         </h1>
-        <p className="text-lg font bold text-justify">
+        <p style={styles.paragraph}>
           When what you value most is at risk, my firm delivers strong legal
           support to ease your stress. I have deep knowledge and experience in
           multiple practice areas, including: Family law — I handle family law
@@ -78,10 +93,8 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-3xl font-bold text-left">
-          Contact a dedicated Texas advocate for a consultation
-        </h1>
-        <p className="text-lg font bold text-justify">
+        <h1 style={styles.heading}>Contact a dedicated Texas advocate for a consultation</h1>
+        <p style={styles.paragraph}>
           At Kriebel Law Firm, PLLC, I represent clients in and around San
           Antonio with family law, criminal defense and estate planning matters.
           My office is conveniently located in the heart of San Antonio. To

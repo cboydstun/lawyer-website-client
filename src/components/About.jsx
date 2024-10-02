@@ -3,17 +3,32 @@ import JacqulineRKriebleImage from "../assets/photos2.jpg";
 import JcIcon from "../assets/Kriebellaw.png";
 
 const About = () => {
+  const styles = {
+    container: {
+      maxWidth: '800px',
+      margin: '0 auto',
+      padding: '20px',
+      fontFamily: 'Arial, sans-serif, bold, 3xl',
+      lineHeight: 1.6,
+    },
+    heading: {
+      color: '#2c3e 50',
+      fontSize: '2.5em',
+      marginBottom: '20px',
+    },
+    paragraph: {
+      color: '#34495e',
+      fontSize: '1.1em',
+      marginBottom: '15px',
+    },
+  };
   return (
-
-    <div  className="flex justify-center flex-col items-center gap-4" style={{ backgroundColor: "gray" }}>
-        <div>
-          <p> About</p>
-        </div>
-        <img className="rounded-full" src={JcIcon} alt="Icon" 
+    <div style={{ backgroundColor: "gray" }}>
+        <img className="rounded-full" src={JcIcon} alt="Image" 
         height={500}
         width={300}
         />
-    
+      About
       <div className="flex justify-center gap-5">
         {/* <img
           src={JacqulineRKriebleImage}
@@ -24,11 +39,9 @@ const About = () => {
         /> */}
       </div>
       <div>
-        <h1 className="text-3xl font-bold text-left">
-          Meet Jacqueline R. Kriebel
-        </h1>
+        <h1 style={styles.heading}>Meet Jacqueline R. Kriebel</h1>
         <div>
-          <p className="text-lg font bold text-justify">
+          <p style={styles.paragraph}>
             Before Jacqueline R. Kriebel earned her Juris Doctor in 2004, her
             studies were in psychology and education. With this foundation, she
             has the sensitivity and listening skills to really hear what you and
@@ -42,7 +55,7 @@ const About = () => {
           More About Jacqueline R. Kriebel
         </h1>
         <div>
-          <p className="text-lg font bold text-justify">
+          <p style={styles.paragraph}>
             She will return your phone call as soon as is practical. She will
             listen patiently while you explain your situation and provide
             immediate feedback as to how your case should be handled and what
@@ -58,7 +71,7 @@ const About = () => {
           </p>
         </div>
         <div>
-          <p className="text-lg font bold text-justify">
+          <p style={styles.paragraph}>
             Ms. Kriebel has worked closely with teens, including troubled youth,
             as a 9th grade world geography teacher. She has also been a mental
             health caseworker and a counselor at a shelter for battered women.
@@ -68,12 +81,8 @@ const About = () => {
           </p>
         </div>
         <div>
-          <div>
-            <h1 className="text-3xl font-bold text-left">
-              You Deserve an Experienced Attorney You Can Trust
-            </h1>
-          </div>
-          <p className="text-lg font bold text-justify">
+          <p>
+            <h1 style={styles.heading}>You Deserve an Experienced Attorney You Can Trust</h1>
             It is important to have a divorce lawyer on your side to help you
             understand what you might face. Attorney Kriebel can help you. She
             helps people from all walks of life who are living or working in San
@@ -86,10 +95,8 @@ const About = () => {
           </p>
         </div>
         <div>
-          <h1 className="text-3xl font-bold text-left">
-            Call Kriebel Law Firm, PLLC Today to Schedule an Appointment
-          </h1>
-          <p className="text-lg font bold text-justify">
+          <h1 style={styles.heading}>Call Kriebel Law Firm, PLLC Today to Schedule an Appointment</h1>
+          <p style={styles.paragraph}>
             Ms. Kriebel will fight to protect your rights. Get peace of mind by
             working with an attorney who is in your corner. Email or call her
             office in San Antonio at 210-677-5586 to schedule a personal

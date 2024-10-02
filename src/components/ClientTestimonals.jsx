@@ -1,15 +1,33 @@
 import React from "react";
 
 const ClientTestimonals = () => {
+  const styles = {
+    container: {
+      maxWidth: '800px',
+      margin: '0 auto',
+      padding: '20px',
+      fontFamily: 'Arial, sans-serif, bold, 3xl',
+      lineHeight: 1.6,
+    },
+    heading: {
+      color: '#2c3e 50',
+      fontSize: '2.5em',
+      marginBottom: '20px',
+    },
+    paragraph: {
+      color: '#34495e',
+      fontSize: '1.1em',
+      marginBottom: '15px',
+    },
+  };
   return (
-    <div style={{ backgroundColor: "gray" }}>
-      ClientTestimonals
+    <div style={styles.container}>
       <div>
-        <h1 className="text-3xl font-bold text-left">
+        <h1 style={styles.heading}>
           Very Upfront – She Advises You Not What You Want To Hear, But What You
           Need To Do
         </h1>
-        <p className="text-lg font bold text-justify">
+        <p style={styles.paragraph}>
           I was hit with a surprise divorce petition which cast me in the most
           negative matter in order to gain assets and possible maintenance from
           me. I'm glad I chose Ms. Jacqueline Kriebel. She was upfront,
@@ -21,8 +39,8 @@ const ClientTestimonals = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-3xl font-bold text-left">Highly Recommend!! Quick Divorce And Excellent Service!</h1>
-        <p className="text-lg font bold text-justify">
+        <h1 style={styles.heading}>Highly Recommend!! Quick Divorce And Excellent Service!</h1>
+        <p style={styles.paragraph}>
           My husband and I were seeking an attorney who was reasonable and
           efficient. We agreed on most issues and just had a couple legal
           questions regarding property division. I don't really trust attorneys
@@ -40,8 +58,8 @@ const ClientTestimonals = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-3xl font-bold text-left">Jacqueline Kriebel You ARE The Greatest!</h1>
-        <p className="text-lg font bold text-justify">
+        <h1 style={styles.heading}>Jacqueline Kriebel You ARE The Greatest!</h1>
+        <p style={styles.paragraph}>
           I'm 62 years old and have had many attorneys over the past 62 years of
           my life. I have had BAD experiences with attorneys until I met Ms.
           Kriebel. Jacqueline kept us informed with all that was going on it our
@@ -54,8 +72,8 @@ const ClientTestimonals = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-3xl font-bold text-left">Superstar!!</h1>
-        <p className="text-lg font bold text-justify">
+        <h1 style={styles.heading}>Superstar!!</h1>
+        <p style={styles.paragraph}>
           Jacqueline Kriebel is a Superstar family attorney. She took all the
           correct legal steps to bring a quick and favorable resolution to my
           case in the absence of a mutual agreement. She communicated with me
