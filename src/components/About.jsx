@@ -8,7 +8,7 @@ const About = () => {
       maxWidth: '800px',
       margin: '0 auto',
       padding: '20px',
-      fontFamily: 'Arial, sans-serif',
+      fontFamily: 'Arial, sans-serif, bold, 3xl',
       lineHeight: 1.6,
     },
     heading: {
@@ -23,10 +23,13 @@ const About = () => {
     },
   };
   return (
-    <div style={styles.container}>
-      {/*<div>
-        <img src={JcIcon} alt="Icon Image" />
-      </div> */}
+    <div style={{ backgroundColor: "gray" }}>
+        <img src={JcIcon} alt="Icon Image" 
+        class="center"
+        height={500}
+        width={300}
+        />
+      About
       <div className="flex justify-center gap-5">
         <img
           src={JacqulineRKriebleImage}

@@ -7,11 +7,11 @@ const Attorneyprofile = () => {
       maxWidth: '800px',
       margin: '0 auto',
       padding: '20px',
-      fontFamily: 'Arial, sans-serif',
+      fontFamily: 'Arial, sans-serif, bold, 3xl',
       lineHeight: 1.6,
     },
     heading: {
-      color: '#2c3e 50',
+      color: '#2c3e50',
       fontSize: '2.5em',
       marginBottom: '20px',
     },
@@ -23,14 +23,16 @@ const Attorneyprofile = () => {
   };
   return (
     <div style={styles.container}>
-      <div>
-        <h1 style={styles.heading}>
+        <h1 style={styles.heading} Attorney profile></h1>
+          <div>
         <img src={JCicon} alt="icon image "/> 
-          Jacqueline R. Kriebel Attorney Phone 210-677-5586 Fax 210-467-5788
-          Email Jacqueline R. Kriebel
-        </h1>
-             
-        <p>
+         <p> Jacqueline R. Kriebel </p>
+         <p>Attorney Phone 210-677-5586 </p>
+         <p>Fax 210-467-5788 </p>
+         <p> Email Jacqueline R. Kriebel </p>
+        </div>
+          <div>   
+        <p style={styles.paragraph}>
           Jacqueline Kriebel is originally from Pennsylvania, where she
           developed a spirited work ethic and aggressive style of
           representation. She is dedicated to providing a client-centered
@@ -57,22 +59,23 @@ const Attorneyprofile = () => {
       </div>
       <div>
         <h1>Areas of Practice</h1>
-        <p>
+        <ul>
           <li>Divorce</li>
           <li>Child Support & Custody & Modifications</li>
           <li>Criminal Defense</li>
           <li>Department of Family and Protective Services (“CPS”) Cases</li>
-        </p>
-      </div>
+        </ul>
+        </div>
       <div>
         <h1>Bar Admissions</h1>
+        <ul>
         <li>Texas, 2004</li>
         <li>U.S. District Court Western District of Texas</li>
-      </p>
+        </ul>
       </div>
       <div>
         <h1>Education</h1>
-        <p>
+        <ul>
           <li>
             St. Mary's University School of Law, San Antonio, Texas J.D. - 2004
           </li>
@@ -80,28 +83,28 @@ const Attorneyprofile = () => {
             Clarion University of Pennsylvania, Clarion, Pennsylvania B.A. cum
             laude - 1995 Major: Psychology Major: B.A.E Secondary Education
           </li>
-        </p>
+        </ul>
       </div>
       <div>
         <h1>Honors and Awards</h1>
-        <p>
+        <ul>
           <li>Superb Rated Attorney, 2015 - Present</li>
           <li>10 Best Family Law Attorneys, 2018 - Present</li>
           <li>10 Best Attorneys, 2018 - Present</li>
           <li>Client Satisfaction Award, 2015 - Present</li>
-        </p>
+        </ul>
       </div>
       <div>
         <h1>Professional Associations and Memberships</h1>
-        <p>
+        <ul>
           <li>San Antonio Bar Association</li>
-        </p>
+        </ul>
       </div>
       <div>
         <h1>Past Employment Positions</h1>
-        <p>
+        <ul>
           <li>Martin & Drought, P.C, Associate Attorney, 2004 - 2007</li>
-        </p>
+        </ul>
       </div>
     </div>
   );

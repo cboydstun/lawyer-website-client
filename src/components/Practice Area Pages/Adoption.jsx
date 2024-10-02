@@ -6,7 +6,7 @@ const Adoption = () => {
       maxWidth: '800px',
       margin: '0 auto',
       padding: '20px',
-      fontFamily: 'Arial, sans-serif',
+      fontFamily: 'Arial, sans-serif, bold, 3xl',
       lineHeight: 1.6,
     },
     heading: {

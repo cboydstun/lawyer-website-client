@@ -14,7 +14,7 @@ const MapsandDirections = () => {
       ></iframe>
       <br/>
       <div>
-        <p>
+        <p className="text-lg font bold text-center">
           Kriebel Law Firm, PLLC <br/>San Antonio Office Blanco Plaza 6609 Blanco
           Rd.,<p> Ste. 100 San Antonio, <br/>Texas 78216 <br/>Phone: 210-677-5586 Fax:
           210-467-5788 </p>To get directions to this location, <br/>click "Directions" or
