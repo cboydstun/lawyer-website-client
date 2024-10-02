@@ -1,37 +1,48 @@
 import React from "react";
-import JCicon from "../assets/photos2.jpg"
+import JCicon from "../assets/photos2.jpg";
 
 const Attorneyprofile = () => {
   const styles = {
     container: {
-      maxWidth: '800px',
-      margin: '0 auto',
-      padding: '20px',
-      fontFamily: 'Arial, sans-serif, bold, 3xl',
+      maxWidth: "800px",
+      margin: "0 auto",
+      padding: "20px",
+      fontFamily: "Arial, sans-serif, bold, 3xl",
       lineHeight: 1.6,
     },
     heading: {
-      color: '#2c3e50',
-      fontSize: '2.5em',
-      marginBottom: '20px',
+      color: "#2c3e50",
+      fontSize: "2.5em",
+      marginBottom: "20px",
     },
     paragraph: {
-      color: '#34495e',
-      fontSize: '1.1em',
-      marginBottom: '15px',
+      color: "#34495e",
+      fontSize: "1.1em",
+      marginBottom: "15px",
     },
   };
   return (
     <div style={styles.container}>
-        <h1 style={styles.heading}>Attorney profile</h1>
-          <div>
-        <img src={JCicon} alt="icon image "/> 
-         <p> Jacqueline R. Kriebel </p>
-         <p>Attorney Phone 210-677-5586 </p>
-         <p>Fax 210-467-5788 </p>
-         <p> E-mail:Jacqueline R. jacquelinekriebel@gmail.com </p>
+      <h1 style={styles.heading}>Attorney profile</h1>
+      <div>
+        <div className="flex justify-center items-center rounded-badge gap-5">
+        <img
+          className="flex justify-center items-center rounded-badge"
+          src={JCicon}
+          alt="icon image"
+          height={450}
+          width={199}
+        />
+    </div>
+    <div>
+      <br/>
+        <p styles={styles.paragraph}> Jacqueline R. Kriebel </p>
+        <p>Attorney Phone 210-677-5586 </p>
+        <p>Fax 210-467-5788 </p>
+        <p> E-mail:Jacqueline R. jacquelinekriebel@gmail.com </p>
         </div>
-          <div>   
+      </div>
+      <div>
         <p style={styles.paragraph}>
           Jacqueline Kriebel is originally from Pennsylvania, where she
           developed a spirited work ethic and aggressive style of
@@ -65,12 +76,12 @@ const Attorneyprofile = () => {
           <li>Criminal Defense</li>
           <li>Department of Family and Protective Services (“CPS”) Cases</li>
         </ul>
-        </div>
+      </div>
       <div>
         <h1>Bar Admissions</h1>
         <ul>
-        <li>Texas, 2004</li>
-        <li>U.S. District Court Western District of Texas</li>
+          <li>Texas, 2004</li>
+          <li>U.S. District Court Western District of Texas</li>
         </ul>
       </div>
       <div>
