@@ -36,7 +36,10 @@ const Auth = (props) => {
     }
   };
   useEffect(() => {
-    getAllClients();
+    if(localStorage.getItem("token")){
+
+      getAllClients();
+    }
   }, []);
   const getAllClients = async (e) => {
     try {
