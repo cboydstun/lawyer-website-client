@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-
+import { Collapse } from "react-daisyui";
+import "./Auth.css";
 const Auth = (props) => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -63,12 +64,40 @@ const Auth = (props) => {
 
   const displayUsers = () => {
     return results.map((user) => (
-      <div
-        style={{ border: ".3em solid black", padding: "2em" }}
-        key={user._id}
-      >
-        <h2>{user.username}</h2>
-      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style={{ border: "1px solid #ddd", padding: "8px" }}>
+              Username
+            </th>
+            <th style={{ border: "1px solid #ddd", padding: "8px" }}>
+              Password
+            </th>
+            <th style={{ border: "1px solid #ddd", padding: "8px" }}>Email</th>
+            <th style={{ border: "1px solid black", padding: "8px" }}>
+              Phone Number
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {results.map((item) => (
+            <tr key={item.id}>
+              <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+                {item.username}
+              </td>
+              <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+                {item.password}
+              </td>
+              <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+                {item.email}
+              </td>
+              <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+                {item.phoneNumber}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     ));
   };
 
