@@ -11,6 +11,18 @@ const Auth = (props) => {
   const [text, setText] = useState("");
   const [results, setResults] = useState([]);
 
+  const updateToken = (token) => {
+    console.log("Token updated!");
+    localStorage.setItem("token", token);
+    setSessionToken(token);
+  };
+
+  const clearToken = () => {
+    console.log("Token Removed!");
+    setSessionToken("");
+    localStorage.clear();
+  };
+
   const handleSignup = async () => {
     try {
       setErrorMsg("");
@@ -27,80 +39,60 @@ const Auth = (props) => {
         }),
       });
 
-      let json = await result.json();
-
-      setResults(json.Results);
-      console.log(json);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-  useEffect(() => {
-    if(localStorage.getItem("token")){
-
-      getAllClients();
-    }
-  }, []);
-  const getAllClients = async (e) => {
-    try {
-      console.log("popcorn");
-
-      let result = await fetch("http://localhost:8080/user/api/users", {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
       const json = await result.json();
       if (json.Error) {
-        throw new Error(error.json);
+        throw new Error(json.Error);
       }
-
       console.log(json);
-      setResults(json);
-      console.log("hi");
-      // props.updateToken(json.Token);
     } catch (err) {
-      console.log(err);
       setErrorMsg(err.message);
     }
+    useEffect(() => {
+      if (localStorage.getItem("token")) {
+        getAllClients();
+      }
+    }, []);
+    const getAllClients = async (e) => {
+      try {
+        console.log("popcorn");
+
+        let result = await fetch("http://localhost:8080/user/api/users", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        });
+        const json = await result.json();
+        if (json.Error) {
+          throw new Error(error.json);
+        }
+        console.log(json);
+        setResults(results.json);
+
+        console.log("hi");
+        // props.updateToken(json.Token);
+      } catch (err) {
+        console.log(err);
+        setErrorMsg(err.message);
+      }
+    };
   };
 
   const displayUsers = () => {
-    return results.map((user) => (
-      <table>
-        <thead>
-          <tr>
-            <th style={{ border: "1px solid #ddd", padding: "8px" }}>
-              Username
-            </th>
-            <th style={{ border: "1px solid #ddd", padding: "8px" }}>
-              Password
-            </th>
-            <th style={{ border: "1px solid #ddd", padding: "8px" }}>Email</th>
-            <th style={{ border: "1px solid black", padding: "8px" }}>
-              Phone Number
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {results.map((item) => (
-            <tr key={item.id}>
-              <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-                {item.username}
-              </td>
-              <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-                {item.password}
-              </td>
-              <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-                {item.email}
-              </td>
-              <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-                {item.phoneNumber}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    return results?.map((item) => (
+      <tr key={item.id}>
+        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+          {item.username}
+        </td>
+        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+          {item.password}
+        </td>
+        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+          {item.email}
+        </td>
+        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+          {item.phoneNumber}
+        </td>
+      </tr>
     ));
   };
 
@@ -153,7 +145,7 @@ const Auth = (props) => {
           Sign Up
         </button>
       </form>
-
+      <div></div>
       <div>
         <form>
           <input value={text} onChange={(e) => setText(e.target.value)} />
@@ -161,14 +153,34 @@ const Auth = (props) => {
           <button
             type="button"
             onClick={() => {
-              console.log("hello");
               getAllClients();
             }}
           >
-            Submit
+            All Clients
+          </button>
+          <button style={{ color: "red" }} onClick={() => clearToken()}>
+            Logout
           </button>
         </form>
-        {displayUsers()}
+        <table>
+          <thead>
+            <tr>
+              <th style={{ border: "1px solid #ddd", padding: "8px" }}>
+                Username
+              </th>
+              <th style={{ border: "1px solid #ddd", padding: "8px" }}>
+                Password
+              </th>
+              <th style={{ border: "1px solid #ddd", padding: "8px" }}>
+                Email
+              </th>
+              <th style={{ border: "1px solid black", padding: "8px" }}>
+                Phone Number
+              </th>
+            </tr>
+          </thead>
+          <tbody>{displayUsers()}</tbody>
+        </table>
       </div>
     </div>
   );
