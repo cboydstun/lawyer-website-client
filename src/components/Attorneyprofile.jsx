@@ -35,6 +35,8 @@ const Attorneyprofile = () => {
         />
     </div>
     <div>
+
+      <div className="section-border">
       <br/>
         <p styles={styles.paragraph}> Jacqueline R. Kriebel </p>
         <p>Attorney Phone 210-677-5586 </p>
@@ -42,6 +44,9 @@ const Attorneyprofile = () => {
         <p> E-mail:Jacqueline R. jacquelinekriebel@gmail.com </p>
         </div>
       </div>
+      <br/>
+      </div>
+      <div className="section-border"> 
       <div>
         <p style={styles.paragraph}>
           Jacqueline Kriebel is originally from Pennsylvania, where she
@@ -55,6 +60,9 @@ const Attorneyprofile = () => {
           process.
         </p>
       </div>
+      </div>
+
+      <div className="section-border">
       <div>
         <p>
           Additionally, Jacqueline Kriebel aggressively cross-examines witnesses
@@ -68,6 +76,7 @@ const Attorneyprofile = () => {
           you shouldn’t be worried.”
         </p>
       </div>
+      </div> 
       <div>
         <h1>Areas of Practice</h1>
         <ul>
@@ -84,6 +93,9 @@ const Attorneyprofile = () => {
           <li>U.S. District Court Western District of Texas</li>
         </ul>
       </div>
+
+      <div className="section-border">
+      <div className="section-border">
       <div>
         <h1>Education</h1>
         <ul>
@@ -92,9 +104,11 @@ const Attorneyprofile = () => {
           </li>
           <li>
             Clarion University of Pennsylvania, Clarion, Pennsylvania B.A. cum
+         
             laude - 1995 Major: Psychology Major: B.A.E Secondary Education
           </li>
         </ul>
+      </div>
       </div>
       <div>
         <h1>Honors and Awards</h1>
@@ -116,6 +130,7 @@ const Attorneyprofile = () => {
         <ul>
           <li>Martin & Drought, P.C, Associate Attorney, 2004 - 2007</li>
         </ul>
+      </div>
       </div>
     </div>
   );

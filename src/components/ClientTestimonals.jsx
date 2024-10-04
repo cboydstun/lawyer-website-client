@@ -8,6 +8,7 @@ const ClientTestimonals = () => {
       padding: '20px',
       fontFamily: 'Arial, sans-serif, bold, 3xl',
       lineHeight: 1.6,
+    
     },
     heading: {
       color: '#2c3e 50',
@@ -22,6 +23,7 @@ const ClientTestimonals = () => {
   };
   return (
     <div style={styles.container}>
+      <div className="section-border">
       <div>
         <h1 style={styles.heading}>
           Very Upfront – She Advises You Not What You Want To Hear, But What You
@@ -38,6 +40,8 @@ const ClientTestimonals = () => {
           Jac, a Divorce client (5-star review)
         </p>
       </div>
+      </div>
+      <div className="section-border">
       <div>
         <h1 style={styles.heading}>Highly Recommend!! Quick Divorce And Excellent Service!</h1>
         <p style={styles.paragraph}>
@@ -57,6 +61,9 @@ const ClientTestimonals = () => {
           HIGHLY RECOMMEND Jacqueline Kriebel! - Divorce client (5-star review)
         </p>
       </div>
+      </div>
+
+      <div className="section-border">
       <div>
         <h1 style={styles.heading}>Jacqueline Kriebel You ARE The Greatest!</h1>
         <p style={styles.paragraph}>
@@ -71,6 +78,9 @@ const ClientTestimonals = () => {
           say THANK YOU very much. - Roy, a Child Custody client (5-star review)
         </p>
       </div>
+      </div>
+
+      <div className="section-border">
       <div>
         <h1 style={styles.heading}>Superstar!!</h1>
         <p style={styles.paragraph}>
@@ -82,6 +92,7 @@ const ClientTestimonals = () => {
           they arose effectively. I am very pleased with her overall service. -
           Family client (5-star review).
         </p>
+      </div>
       </div>
     </div>
   );
