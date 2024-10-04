@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const DrugCrimes = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Drug Crimes</h1>
         <p className="paragraph"> Assertive Defense Attorney Fighting for Your Rights in the San Antonio
         Area Drug charges are serious and can lead to severe consequences,
@@ -15,7 +16,8 @@ const DrugCrimes = () => {
         I work diligently to have confessions dismissed and to seek reductions
         or dismissals of charges. Additionally, I aim to place clients in
         rehabilitation programs instead of incarceration. </p>
-  
+        </div>
+        <div className="section-border">
         <p className="paragraph"> If you’ve been accused
         of a drug-related crime in the San Antonio area or anywhere in Texas,
         I’m here to provide the dedicated defense you deserve. Committed Texas
@@ -43,7 +45,10 @@ const DrugCrimes = () => {
         <p className="paragraph"> Your legal rights are
         my top priority, and I will tirelessly work to achieve a positive
         resolution for your case. </p>
-        
+        </div>
+
+
+     <div className="section-border">    
         <h1 className="heading">Knowledgeable Defense Attorney Challenging
         Drug Charges from Traffic Stops </h1>
         <p className="paragraph"> Many drug arrests arising from traffic
@@ -60,9 +65,10 @@ const DrugCrimes = () => {
         stop, if any confession was coerced, or if unreliable informants were
         involved in your arrest. These factors can significantly impact the
         outcome of your case. </p>
-        
+        </div> 
         <h1 className="heading"> Contact a Strong Texas Criminal Defense Lawyer if
         You Face a Drug Charge </h1>
+      
         <p className="paragraph"> If you’ve been charged with a drug crime, your
         future is at stake. At Kriebel Law Firm, PLLC in San Antonio, I will
         passionately represent your interests in court and help you reclaim your

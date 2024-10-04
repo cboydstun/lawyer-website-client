@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const Assault = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Assault</h1>
       <p className="paragraph">
         Dedicated San Antonio Attorney Advocates Aggressively Against Assault
@@ -16,7 +17,9 @@ const Assault = () => {
         challenging time. Whether you are charged with a misdemeanor or felony
         assault, I will vigorously protect your rights and interests.
       </p>
+      </div>
 
+      <div className="section-border">
       <h1 className="heading">
         Knowledgeable Advocate for Misdemeanor Assault Cases
       </h1>
@@ -45,7 +48,7 @@ const Assault = () => {
           status.
         </li>
       </ul>
-
+      </div>
       <p className="paragraph">
         {" "}
         I am dedicated to building a robust defense aimed at reducing or
@@ -86,7 +89,7 @@ const Assault = () => {
         justifiable, I will provide skilled representation tailored to your
         needs.
       </p>
-
+<div className="section-border">
       <p className="paragraph">
         Contact a Knowledgeable Texas Criminal Defense Attorney At Kriebel Law
         Firm, PLLC, I represent clients throughout South Texas facing assault
@@ -94,6 +97,7 @@ const Assault = () => {
         210-677-5586 or contact me online to schedule an initial consultation at
         my San Antonio office. Let’s work together to protect your future.
       </p>
+      </div>
     </div>
   );
 };

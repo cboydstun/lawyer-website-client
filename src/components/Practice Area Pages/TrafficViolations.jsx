@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const TrafficViolations = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Traffic Violations</h1>
       <p className="paragraph">
         Assertive Texas Attorney Defending Clients Accused of Traffic Violations.
@@ -16,7 +17,10 @@ const TrafficViolations = () => {
         throughout the San Antonio area and Texas in a variety of traffic
         offenses, diligently questioning law enforcement actions to seek
         reductions or dismissals of the charges against you. </p>
-        
+        </div>
+
+
+        <div className="section-border">
         <h1 className="heading">Skilled Texas
         Litigator Working to Dismiss or Reduce Charges </h1>
         <p className="paragraph"> Facing a criminal or
@@ -48,7 +52,9 @@ const TrafficViolations = () => {
         <p className="paragraph">With my knowledge and experience, I assert your
         rights and protect your interests in traffic court, addressing both
         moving and non-moving violations. </p>
-        
+        </div>
+
+        <div className="section-border">
         <h1 className="heading"> Determined Counselor Building Strong
         and Strategic Defenses </h1>
         <p className="paragraph"> I adopt a meticulous approach to traffic
@@ -65,6 +71,7 @@ const TrafficViolations = () => {
         Antonio office at 210-677-5586 or contact me online to schedule a
         consultation today.
       </p>
+      </div>
     </div>
   );
 };

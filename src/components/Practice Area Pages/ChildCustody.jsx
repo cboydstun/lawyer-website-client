@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const ChildCustody = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Child Custody</h1>
       <p className="paragraph">
         Understanding the laws governing child custody can be a daunting task.
@@ -19,6 +20,9 @@ const ChildCustody = () => {
         When negotiations fail, Ms. Kriebel is prepared to vigorously defend
         your rights in court.{" "}
       </p>
+      </div>
+
+      <div className="section-border">
       <div>
         <h1 className="heading">
           Finding the Optimal Arrangement for Your Family{" "}
@@ -58,9 +62,13 @@ const ChildCustody = () => {
           collaborates with clients to set realistic goals, ensuring the best
           possible outcomes in child custody and support matters.{" "}
         </p>
+        </div>
+
+    <div className="section-border">
 
         <h1 className="heading">
           {" "}
+          
           Immediate Legal Support for DFPS Involvement
         </h1>
         <p className="paragraph">
@@ -70,7 +78,7 @@ const ChildCustody = () => {
           rights and advocate assertively on your behalf, both prior to and
           during court proceedings.
         </p>
-
+        </div>
         <h1 className="heading"> Schedule Your Consultation Today </h1>
         <p className="paragraph">
           You deserve a reliable attorney who is responsive to your needs and

@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const CPS = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Child Protective Services</h1>
       <p className="paragraph">
         Has the Department of Family and Protective Services Contacted You?
@@ -15,7 +16,9 @@ const CPS = () => {
         visit from DFPS, it's crucial to contact an experienced family law
         attorney immediately to safeguard your rights and your children.
         </p>
+        </div>
 
+        <div className="section-border">
         <h1 className="heading">Fearless Advocacy in DFPS Cases</h1> 
         <p className="paragraph"> While many attorneys hesitate to take on
         DFPS cases, Jacqueline Kriebel is not intimidated. She has successfully
@@ -24,7 +27,9 @@ const CPS = () => {
         your situation, she may be able to do the same for you. Call Kriebel Law
         Firm, PLLC in San Antonio at 210-677-5586 or email for a consultation.
         </p>
-        
+        </div>
+
+        <div className="section-border">
         <h1 className="heading">The Challenges of Reunifying with Your Children</h1>
         <p className="paragraph"> DFPS has significant
         governmental backing, giving them considerable power. If they believe
@@ -43,6 +48,7 @@ const CPS = () => {
         210-677-5586 today to schedule a consultation and learn how to protect
         your family from unwarranted disruptions.
       </p>
+      </div>
     </div>
   );
 };

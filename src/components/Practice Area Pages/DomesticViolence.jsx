@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const DomesticViolence = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Domestic Violence</h1>
       <p className="paragraph">
         Tenacious Law Firm Providing Strong Representation for Clients in San
@@ -17,7 +18,9 @@ const DomesticViolence = () => {
         investigations to uncover the truth surrounding your arrest. My
         commitment is to ensure your rights are upheld and that you receive the
         legal protections you deserve. </p>
-        
+        </div>
+
+        <div className="section-border">
         <h1 className="heading" > Assertive Texas Lawyer Taking on Serious
         Criminal Accusations </h1> 
         <p className="paragraph"> Domestic violence charges can arise from actual
@@ -41,7 +44,10 @@ const DomesticViolence = () => {
          <p className="paragraph"> I will work tirelessly to build a robust defense against
         these charges, pursuing options for acquittal, dismissal, or favorable
         plea agreements. </p>
-        
+        </div>
+
+
+        <div className="section-border">
         <h1 className="heading"> Strategic Advocate Asserting Your Rights and Legal
         Protections </h1>
         <p className="paragraph"> I understand the distress and frustration that come with
@@ -49,7 +55,7 @@ const DomesticViolence = () => {
         necessary steps to protect your interests and prevent your situation
         from worsening. I aim to help you avoid serious repercussions that may
         follow a domestic violence charge, including: </p>
-        
+       
         <ul className="list">
           <li>Imprisonment </li>
           <li> Permanent
@@ -61,12 +67,14 @@ const DomesticViolence = () => {
         possess firearms </li>
         <li> Immigration consequences for non-citizens </li>
         </ul>
-
+       
         <p className="paragraph"> If you are
         served with a restraining order, Kriebel Law Firm, PLLC can help you
         contest it in court. It is vital to adhere to the order until a judge
         issues modifications. </p>
-        
+        </div>
+
+        <div className="section-border">
         <h1 className="heading">Contact an Assertive Texas Criminal Defense Lawyer
         for Your Domestic Violence Charge </h1>
         <p className="paragraph"> When accused of domestic violence,
@@ -76,6 +84,7 @@ const DomesticViolence = () => {
         make a significant impact on your case. Call 210-677-5586 or contact me
         online to schedule a consultation. 
       </p>
+      </div>
     </div>
   );
 };

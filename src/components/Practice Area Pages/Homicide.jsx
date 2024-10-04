@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const Homicide = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Homicide</h1>
       <p className="paragraph">
          Facing
@@ -35,7 +36,9 @@ const Homicide = () => {
         guilty beyond a reasonable doubt. When I represent you, you can count on
         my zealous advocacy to uphold your rights from the very beginning of
         your case. </p>
-        
+        </div>
+
+        <div className="section-border">
         <h1 className="heading">Attorney Thoroughly Examining Evidence to Challenge
         Prosecutors’ Claims </h1>
         <p className="paragraph"> Homicide investigations often involve complex
@@ -52,7 +55,8 @@ const Homicide = () => {
         understand that your freedom is on the line when facing a homicide
         charge. You can rely on my trial-tested advocacy and deep knowledge of
         Texas law to protect that freedom. </p>
-        
+        </div>
+        <div className="section-border">
         <h1 className="heading"> Contact an Assertive Texas Criminal
         Defense Firm for Your Homicide Charge </h1>
         <p className="paragraph"> If you are charged with a serious
@@ -62,6 +66,7 @@ const Homicide = () => {
         Texas facing a variety of homicide charges. Call me at 210-677-5586 or
         contact me online to schedule a consultation today.
       </p>
+      </div>
     </div>
   );
 };

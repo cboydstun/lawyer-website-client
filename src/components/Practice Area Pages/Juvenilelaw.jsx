@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const Juvenilelaw = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Juvenile Law</h1>
       <p className="paragraph">
          Dedicated
@@ -18,7 +19,9 @@ const Juvenilelaw = () => {
         harm from guardians. When you choose my services, you gain a
         knowledgeable and assertive juvenile law attorney who understands the
         intricacies of the Texas juvenile system and its courts. </p>
-        
+        </div>
+
+        <div className="section-border">
         <h1 className="heading"> Experienced
         Advocate for Juveniles Accused of Misconduct </h1> 
         <p className="paragraph"> Parents’ primary concern is
@@ -34,7 +37,9 @@ const Juvenilelaw = () => {
         experience allows me to anticipate how local judges and juvenile courts
         are likely to handle your child's case, enabling me to effectively
         represent their rights and pursue the most favorable outcome. </p>
-        
+        </div>
+
+        <div className="section-border">
         <h1 className="heading"> Committed
         to Protecting Your Child's Future </h1> 
         <p className="paragraph"> If your child is accused of, charged
@@ -46,7 +51,9 @@ const Juvenilelaw = () => {
         for sentencing options that prevent a criminal record, thereby
         safeguarding your child's opportunities for higher education and
         meaningful careers. </p>
-        
+        </div>
+
+        <div className="section-border">
         <h1 className="heading">Proactive Advocacy for Juveniles Facing Abuse </h1> 
         <p className="paragraph"> In
         addition to representing juveniles accused of misconduct, I also
@@ -64,6 +71,7 @@ const Juvenilelaw = () => {
         me at 210-677-5586 or contact me online to schedule a consultation at my
         San Antonio office.
       </p>
+      </div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import "./PracticeArea.css";
 const Adoption = () => {
   return (
     <div className="container">
+      <div className="section-border">
         <h1 className="heading">Adoption</h1>
         <div>
           <p className="paragraph">
@@ -28,6 +29,10 @@ const Adoption = () => {
         your goals. 
         </p>
         </div>
+        </div>
+
+
+        <div className="section-border">
         <div>
           <h2 className="heading">Committed Attorney for Termination of Parental Rights </h2>
           <p className="paragraph">
@@ -41,6 +46,9 @@ const Adoption = () => {
         the adoption freely and voluntarily, protecting against claims of fraud,
         duress, or coercion that could jeopardize the adoption.
         </p>
+        </div>
+
+        <div className="section-border">
         <div>
           <h3 className="heading">Skilled Advocate for Overcoming Biological Father's Resistance </h3>
           <p className="paragraph">
@@ -55,6 +63,9 @@ const Adoption = () => {
         consent, or litigate issues of fitness when appropriate.
         </p>
         </div>
+        </div>
+
+        <div className="section-border">
         </div>
         <div>
          <h4 className="heading">Established Firm for Diverse Domestic Adoption Types </h4>
@@ -76,6 +87,9 @@ const Adoption = () => {
         timely and lawful arrival of your child into your family.
         </p>
         </div>
+        </div>
+
+        <div className="section-border">
         <div>
           <h5 className="heading">Contact a Tenacious Texas Adoption Attorney </h5>
         <p className="paragraph"> While adoption can bring immense joy
@@ -84,6 +98,7 @@ const Adoption = () => {
         clients across Texas seeking to adopt. Call 210-677-5586 or reach out
         online to schedule a consultation today.
         </p>
+        </div>
         </div>
         </div>
   );

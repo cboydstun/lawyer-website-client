@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const Divorce = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Divorce</h1>
       <p className="paragraph">
         Divorce: Navigating a divorce can be incredibly challenging, often
@@ -21,7 +22,10 @@ const Divorce = () => {
         PLLC, at 210-677-5586 to schedule your consultation and take the first
         step forward. 
         </p>
+        </div>
 
+
+        <div className="section-border">
         <h1 className="heading">Prioritizing Your Needs with Honest Representation </h1>
         <p className="paragraph"> Divorce
         is a tumultuous time that often encompasses a variety of complex issues.
@@ -60,7 +64,8 @@ const Divorce = () => {
         you for legal proceedings. With children's welfare at the forefront, she
         will ensure that their best interests are prioritized throughout the
         process. </p>
-        
+        </div>
+        <div className="section-border">
         <h1 className="heading"> Considering an Uncontested Divorce? </h1>
         <p className="paragraph"> If you and your spouse
         agree on the terms of your divorce and do not have children or shared
@@ -74,6 +79,7 @@ const Divorce = () => {
         arrange a consultation regarding your family law matter. You can also
         reach the firm online for more information.
       </p>
+      </div>
     </div>
   );
 };

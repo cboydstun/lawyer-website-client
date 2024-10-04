@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const EquitableDistribution = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Equitable Distribution</h1>
         <p className="paragraph"> In
         Texas, assets acquired and liabilities incurred during a marriage are
@@ -14,7 +15,9 @@ const EquitableDistribution = () => {
         advocate for clients in the San Antonio area and across Texas, ensuring
         that their rights are protected and that marital property and debt are
         divided in a way that safeguards their financial interests.</p>
+        </div>
 
+        <div className="section-border">
         <h1 className="heading">Detail-Oriented Advocate Committed to Protecting Your Assets </h1>
           <p className="paragraph"> Before marital property can be divided, assets must be accurately valued and
         classified as either marital or separate. Marital property consists of
@@ -25,7 +28,9 @@ const EquitableDistribution = () => {
         adept at tracing the commingling of separate and marital assets to
         prevent unfair distribution and ensure that no assets or debts are
         overlooked in the final settlement. Marital property may include: </p>
-        
+        </div>
+
+        <div className="section-border">
         <ul className="list">
         <li> The marital home and vacation properties </li>
         <li> Stocks and bonds </li>
@@ -38,14 +43,16 @@ const EquitableDistribution = () => {
         <li> Pensions and annuities </li>
         <li> Businesses </li>
         </ul> 
-        
+       
+
+      
         <p className="paragraph"> Courts consider various factors when
         determining property division, including the financial situation and
         earning potential of each spouse, their contributions to acquiring
         marital property, and the future needs and liabilities of both parties.
         I will ensure the court has all pertinent information for a fair
         division of your assets. </p>
-        
+        </div>
         <h1 className="heading">Dedicated Divorce Counselor Committed to
         Favorable Property Division Outcomes </h1>
         <p className="paragraph"> At Kriebel Law Firm, PLLC, I aim to
@@ -57,6 +64,9 @@ const EquitableDistribution = () => {
         divorce. When agreement is unattainable, I am fully prepared to
         vigorously advocate for your rights in court. </p>
         
+
+
+        <div className="section-border">
         <h1 className="heading"> Contact a Reliable Texas
         Family Lawyer for Asset Division Assistance </h1> 
         <p className="paragraph">I represent clients
@@ -64,6 +74,7 @@ const EquitableDistribution = () => {
         property and debts. Call Kriebel Law Firm, PLLC, at 210-677-5586 or
         contact me online to schedule a consultation at my San Antonio office.
       </p>
+    </div>
     </div>
   );
 };
