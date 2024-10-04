@@ -39,6 +39,7 @@ const About = () => {
         width={300}
         />
         </div>
+        <div className="section-border">
         <h1 style={styles.heading}>Meet Jacqueline R. Kriebel</h1>
         <div>
           <p style={styles.paragraph}>
@@ -51,6 +52,8 @@ const About = () => {
             dignity regardless of what their legal situation is.
           </p>
         </div>
+        </div>
+        <div className="section-border">
         <h1 style={styles.heading}>
           More About Jacqueline R. Kriebel
         </h1>
@@ -80,6 +83,8 @@ const About = () => {
             background by following the link below: Jacqueline R. Kriebel.
           </p>
         </div>
+        </div>
+        <div className="section-border">
         <div>
             <h1 style={styles.heading}>You Deserve an Experienced Attorney You Can Trust</h1>
           <p>
@@ -94,6 +99,9 @@ const About = () => {
             Antonio.
           </p>
         </div>
+        </div>
+
+        <div className="section-border">
         <div>
           <h1 style={styles.heading}>Call Kriebel Law Firm, PLLC Today to Schedule an Appointment</h1>
           <p style={styles.paragraph}>
@@ -102,6 +110,7 @@ const About = () => {
             office in San Antonio at 210-677-5586 to schedule a personal
             consultation.
           </p>
+        </div>
         </div>
         <div>
           <form action="" method="get">

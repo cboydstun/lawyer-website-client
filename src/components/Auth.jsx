@@ -158,10 +158,7 @@ const Auth = (props) => {
           >
             All Clients
           </button>
-          <button
-            style={{ color: "red", top: 15, right: 150, margin: "2em" }}
-            onClick={() => clearToken()}
-          >
+          <button style={{ color: "red" }} onClick={() => clearToken()}>
             Logout
           </button>
         </form>
