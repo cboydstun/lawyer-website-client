@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const ProtectionOrders = () => {
     return (
         <div className="container">
+            <div className="section-border">
             <h1 className="heading">Protection Orders</h1>
             <p className="paragraph"> Texas Family Law Attorney Advocating for Clients in Need of Protection
         Relentless Lawyer Defending Victims in the San Antonio Area. If you fear
@@ -18,7 +19,8 @@ const ProtectionOrders = () => {
         designed to prevent contact from anyone who has threatened your safety.
         I am committed to doing whatever it takes to safeguard you and your
         family against domestic violence and intimidation. </p>
-        
+        </div>
+        <div className="section-border">
         <h1 className="heading">Aggressive Advocate
         for Filing Protective Orders </h1> 
         <p className="paragraph"> Orders of protection are vital legal tools
@@ -28,7 +30,10 @@ const ProtectionOrders = () => {
         process of obtaining an order of protection in Texas, ensuring you
         understand your rights and the legal mechanisms available to you. The
         relief provided by these orders can include: </p>
+        </div>
 
+        <div className="section-border">
+            <br/>
         <ul className="list">
             <li> Stay-Away Provisions: These
         provisions require the accused to maintain a specific distance from you,
@@ -44,7 +49,7 @@ const ProtectionOrders = () => {
         or child support, or granting you sole possession of shared vehicles or
         living spaces. </li>
         </ul>
-        
+       
         <p className="paragrpah"> Depending on jurisdiction, restraining orders can be
         issued by family courts, civil courts, or criminal courts. You can trust
         me to vigorously assert your rights and pursue all available legal
@@ -55,6 +60,8 @@ const ProtectionOrders = () => {
         order of protection to ensure your safety. Call me at 210-677-5586 or
         contact me online to schedule a consultation at my San Antonio office.
       </p>
+      <br/>
+      </div>
         </div>
     );
 };

@@ -5,6 +5,7 @@ const FamilyLaw = () => {
   return (
     <div className="container">
       <h1 className="heading">Family law</h1>
+      <div className="section-border">
         <p className="paragraph"> Navigating family disputes can be one of life's most stressful
         challenges. Are you uncertain about how to handle your divorce?
         Concerned about maintaining your relationship with your children
@@ -18,6 +19,9 @@ const FamilyLaw = () => {
         cases where disputes escalate to domestic violence, Ms. Kriebel will
         take decisive action to protect your family through protective orders.
         </p>
+        </div>
+
+        <div className="section-border">
         <p className="paragraph">
         If you're facing challenges with the Department of Family and Protective
         Services, her extensive experience will ensure your rights are fiercely
@@ -29,7 +33,9 @@ const FamilyLaw = () => {
         regarding divorce and child-related matters. Attorney Kriebel provides
         trusted guidance and representation for a wide range of Texas family law
         cases, including: </p>
-        
+        </div>
+
+        <div className="section-boder">
         <ul className="list">
           <li>Divorce — Uncontested and contested divorce, including
         military divorce considerations </li>
@@ -49,7 +55,9 @@ const FamilyLaw = () => {
         involuntary terminations </li>
         <li> Protective Orders </li>
         </ul>
-        
+        </div>
+
+        <div className="section-border">
         <p className="paragraph">Aggressive representation
         and legal defense. Concerned About a Visit from CPS? Defend your right to
         parent your children. Attorney Jacqueline Kriebel offers seasoned family
@@ -59,6 +67,7 @@ const FamilyLaw = () => {
         via email to discuss your legal options and find effective resolutions
         for your family law issues.
       </p>
+    </div>
     </div>
   );
 };

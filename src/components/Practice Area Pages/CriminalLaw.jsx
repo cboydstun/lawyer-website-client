@@ -4,6 +4,7 @@ import "./PracticeArea.css";
 const CriminalLaw = () => {
   return (
     <div className="container">
+      <div className="section-border">
       <h1 className="heading">Criminal Law</h1>
       <p className="paragraph">
         Being Charged with a Criminal Offense is Life-Changing. Facing Criminal
@@ -16,7 +17,9 @@ const CriminalLaw = () => {
         visitation rights. With so much at stake, you need an experienced
         attorney who will fight for your rights. 
         </p>
+        </div>
 
+        <div className="section-border">
         <h1 className="heading">Hire an Experienced Criminal Defense Lawyer</h1>
         <p className="paragraph"> Attorney Jacqueline Kriebel will meet with you personally
         to understand your situation and educate you about the relevant laws.
@@ -33,6 +36,8 @@ const CriminalLaw = () => {
         all prosecution evidence, and help determine if pursuing a plea
         agreement is beneficial. Her goal is to minimize the impact of this
         stressful situation on your life.</p>
+        </div>
+
         <h1 className="heading"> Comprehensive Defense for Misdemeanors
         and Felonies </h1>
         <p className="paragraph"> Ms. Kriebel aggressively represents clients charged with:
@@ -51,7 +56,7 @@ const CriminalLaw = () => {
           <li> Welfare Fraud </li>
           <li> Homicide </li>
           </ul>
-
+         <div className="section-border">
           <h1 className="heading"> A Bulldog in the Courtroom </h1>
           <p className="paragraph">When your freedom is on the line, you need a fierce advocate. Attorney Jacqueline
         Kriebel has earned the nickname "bulldog in the courtroom" for her
@@ -60,12 +65,15 @@ const CriminalLaw = () => {
         While no outcomes can be guaranteed, knowing that Ms. Kriebel is
         dedicated to protecting your rights will provide you with peace of mind.
         </p>
+        </div>
 
+        <div className="section-border">
         <h1 className="heading">Contact Kriebel Law Firm, PLLC Today </h1>
         <p className="paragraph"> Don’t leave your future to chance.
         Email or call Kriebel Law Firm, PLLC in San Antonio at 210-677-5586 to
         schedule your consultation today.
       </p>
+      </div>
     </div>
   );
 };

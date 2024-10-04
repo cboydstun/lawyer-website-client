@@ -4,6 +4,7 @@ import './PracticeArea.css';
 const Alimony = () => {
 return (
   <div className="container">
+    <div className="section-border">
     <h1 className="heading">Alimony</h1>
     <p className="paragraph">Divorce involves crucial decisions that can significantly affect
       your quality of life. Whether negotiating an agreement or battling in a
@@ -14,6 +15,8 @@ return (
       to diligently pursuing an equitable resolution for clients in the San
       Antonio area and throughout Texas.
       </p>
+      </div>
+      <div className="section-border">
       <div>
          <h1 className="heading">Tenacious Advocate for Alimony</h1>
          <p className="paragraph">
@@ -43,6 +46,9 @@ return (
         outcome.
         </p>
         </div>
+        </div>
+
+        <div className="section-border">
         <div>
           <h1 className="heading"> Proactive Attorney for Enforcing and Modifying Alimony</h1>
           <p className="paragraph">
@@ -55,6 +61,8 @@ return (
         situation, I will fiercely advocate for a favorable resolution.
         </p>
         </div>
+        </div>
+        <div className="section-border">
         <div>
           <h1 className="heading"> Contact a Dedicated Texas Alimony Attorney Today </h1>
           <p className="paragraph"> Navigating a divorce can be
@@ -62,6 +70,7 @@ return (
         fair resolution regarding spousal support. Call Kriebel Law Firm, PLLC
         in San Antonio at 210-677-5586 or contact me online to schedule a
         consultation with a qualified attorney. </p>
+        </div>
         </div>
       </div>
   );
