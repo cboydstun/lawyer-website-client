@@ -1,10 +1,11 @@
 import React from "react";
+import "./PracticeArea.css";
 
 const CPS = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-left">Child Protective Services</h1>
-      <p className="text-lg font bold text-justify">
+    <div className="container">
+      <h1 className="heading">Child Protective Services</h1>
+      <p className="paragraph">
         Has the Department of Family and Protective Services Contacted You?
         Protect Your Family with Experienced Legal Guidance In Texas, the
         Department of Family and Protective Services (DFPS) is tasked with
@@ -13,13 +14,19 @@ const CPS = () => {
         unnecessary complications for your family. If you've received a call or
         visit from DFPS, it's crucial to contact an experienced family law
         attorney immediately to safeguard your rights and your children.
-        Fearless Advocacy in DFPS Cases While many attorneys hesitate to take on
+        </p>
+
+        <h1 className="heading">Fearless Advocacy in DFPS Cases</h1> 
+        <p className="paragraph"> While many attorneys hesitate to take on
         DFPS cases, Jacqueline Kriebel is not intimidated. She has successfully
         challenged the DFPS multiple times, even securing restraining orders to
         prevent the agency from removing children from their homes. Depending on
         your situation, she may be able to do the same for you. Call Kriebel Law
         Firm, PLLC in San Antonio at 210-677-5586 or email for a consultation.
-        The Challenges of Reunifying with Your Children DFPS has significant
+        </p>
+        
+        <h1 className="heading">The Challenges of Reunifying with Your Children</h1>
+        <p className="paragraph"> DFPS has significant
         governmental backing, giving them considerable power. If they believe
         your child is in danger, they can arrive at your home with a warrant to
         remove your children. Regaining custody can be a daunting and complex

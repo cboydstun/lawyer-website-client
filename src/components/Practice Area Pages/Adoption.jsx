@@ -1,30 +1,13 @@
 import React from "react";
+import "./PracticeArea.css";
+
 
 const Adoption = () => {
-  const styles = {
-    container: {
-      maxWidth: '800px',
-      margin: '0 auto',
-      padding: '20px',
-      fontFamily: 'Arial, sans-serif, bold, 3xl',
-      lineHeight: 1.6,
-    },
-    heading: {
-      color: '#2c3e 50',
-      fontSize: '2.5em',
-      marginBottom: '20px',
-    },
-    paragraph: {
-      color: '#34495e',
-      fontSize: '1.1em',
-      marginBottom: '15px',
-    },
-  };
   return (
-    <div style={styles.container}>
-        <h1 style={styles.heading}>Adoption</h1>
+    <div className="container">
+        <h1 className="heading">Adoption</h1>
         <div>
-          <p style={styles.paragraph}>
+          <p className="paragraph">
         Texas Attorney Navigates the Legal Complexities of Adoption Experienced
         Lawyer Assists Clients in the San Antonio Area in Expanding Their
         Families Adopting a child should be a joyous occasion, but unforeseen
@@ -46,8 +29,8 @@ const Adoption = () => {
         </p>
         </div>
         <div>
-          <h2 style={styles.heading}>Committed Attorney for Termination of Parental Rights </h2>
-          <p style={styles.paragraph}>
+          <h2 className="heading">Committed Attorney for Termination of Parental Rights </h2>
+          <p className="paragraph">
              The possibility of birth parents challenging an adoption post-finalization
         is a legitimate concern for adoptive families. Poorly managed adoptions
         can cause immense emotional turmoil for everyone involved—the adoptive
@@ -59,8 +42,8 @@ const Adoption = () => {
         duress, or coercion that could jeopardize the adoption.
         </p>
         <div>
-          <h3 style={styles.heading}>Skilled Advocate for Overcoming Biological Father's Resistance </h3>
-          <p style={styles.paragraph}>
+          <h3 className="heading">Skilled Advocate for Overcoming Biological Father's Resistance </h3>
+          <p className="paragraph">
              A biological father holds the same parental rights as the mother, especially if he is listed in
         the state’s putative father registry and has been actively involved in
         the child's life. While engaged fathers may oppose adoption, less
@@ -74,8 +57,8 @@ const Adoption = () => {
         </div>
         </div>
         <div>
-         <h4 style={styles.heading}>Established Firm for Diverse Domestic Adoption Types </h4>
-         <p style={styles.paragraph}>  An open adoption agreement
+         <h4 className="heading">Established Firm for Diverse Domestic Adoption Types </h4>
+         <p className="paragraph">  An open adoption agreement
         allows the biological family to maintain a relationship with the child,
         with terms defined in a written contract that can vary from regular
         visits to yearly updates. Conversely, a closed adoption safeguards the
@@ -94,8 +77,8 @@ const Adoption = () => {
         </p>
         </div>
         <div>
-          <h5 style={styles.heading}>Contact a Tenacious Texas Adoption Attorney </h5>
-        <p style={styles.paragraph}> While adoption can bring immense joy
+          <h5 className="heading">Contact a Tenacious Texas Adoption Attorney </h5>
+        <p className="paragraph"> While adoption can bring immense joy
         to your family, it requires navigating a myriad of legal requirements.
         Kriebel Law Firm, PLLC in San Antonio offers steadfast legal counsel for
         clients across Texas seeking to adopt. Call 210-677-5586 or reach out
