@@ -4,45 +4,54 @@ import HeroSection from "./HeroSection.jsx";
 const Home = () => {
   const styles = {
     container: {
-      maxWidth: '800px',
-      margin: '0 auto',
-      padding: '20px',
-      fontFamily: 'Arial, sans-serif',
+      maxWidth: "800px",
+      margin: "0 auto",
+      padding: "20px",
+      fontFamily: "Arial, sans-serif",
       lineHeight: 1.6,
+      // border: '2px solid black',
+      padding: "5px",
     },
     heading: {
-      color: '#2c3e 50',
-      fontSize: '2.5em',
-      marginBottom: '20px',
+      color: "#2c3e 50",
+      fontSize: "2.5em",
+      marginBottom: "20px",
     },
     paragraph: {
-      color: '#34495e',
-      fontSize: '1.1em',
-      marginBottom: '15px',
+      color: "#34495e",
+      fontSize: "1.1em",
+      marginBottom: "15px",
     },
   };
   return (
     <div style={styles.container}>
-      <div>
-        <HeroSection />
-        <h1 style={styles.heading}>
-          San Antonio Family Lawyer Delivers Strong Representation to Clients
-        </h1>
+      <div className="section-border">
+        <div>
+        <div className="section-border">
+          <HeroSection />
+          <h1 style={styles.heading}>
+            San Antonio Family Lawyer Delivers Strong Representation to Clients
+          </h1>
+          </div>
+        </div>
+        <div>
+          <p style={styles.paragraph}>
+            Experienced attorney also advocates for clients in criminal defense
+            cases and provides estate planning services When a legal issue
+            involves your family or your freedom, it is crucial to retain the
+            help of a lawyer who will help you obtain the best possible
+            solution. At Kriebel Law Firm, PLLC in San Antonio, Texas, I
+            advocate for clients dealing with a wide range of family law
+            matters. I also provide fierce representation in criminal defense
+            cases and helpful estate planning services. For over 10 years, I’ve
+            dedicated myself to each of the cases I take on, and you can be
+            confident that I’ll use that experience to capably serve you.
+          </p>
+        </div>
       </div>
-      <div>
-        <p style={styles.paragraph}>
-          Experienced attorney also advocates for clients in criminal defense
-          cases and provides estate planning services When a legal issue
-          involves your family or your freedom, it is crucial to retain the help
-          of a lawyer who will help you obtain the best possible solution. At
-          Kriebel Law Firm, PLLC in San Antonio, Texas, I advocate for clients
-          dealing with a wide range of family law matters. I also provide fierce
-          representation in criminal defense cases and helpful estate planning
-          services. For over 10 years, I’ve dedicated myself to each of the
-          cases I take on, and you can be confident that I’ll use that
-          experience to capably serve you.
-        </p>
-      </div>
+
+
+      <div className="section-border">
       <div>
         <p style={styles.paragraph}>
           <h1 style={styles.heading}>
@@ -63,6 +72,8 @@ const Home = () => {
           guide you through your matter.
         </p>
       </div>
+      </div>
+      <div className="section-border">
       <div>
         <h1 style={styles.heading}>
           Attorney provides strong, knowledgeable representation for criminal
@@ -91,15 +102,20 @@ const Home = () => {
           handling cases just like yours, so you can be confident that I will
           aim for a positive resolution to your matter.
         </p>
+        </div>
       </div>
+      <div className="section-border">
       <div>
-        <h1 style={styles.heading}>Contact a dedicated Texas advocate for a consultation</h1>
+        <h1 style={styles.heading}>
+          Contact a dedicated Texas advocate for a consultation
+        </h1>
         <p style={styles.paragraph}>
           At Kriebel Law Firm, PLLC, I represent clients in and around San
           Antonio with family law, criminal defense and estate planning matters.
           My office is conveniently located in the heart of San Antonio. To
           schedule a consultation, call me at 210-677-5586 or contact me online.{" "}
         </p>
+      </div>
       </div>
     </div>
   );

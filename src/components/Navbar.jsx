@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { Button, Navbar as Nav, Dropdown } from "react-daisyui";
+import { Button, Navbar as Nav, Dropdown, Avatar } from "react-daisyui";
 import MapsandDirections from "../components/MapsandDirections";
 import RatingsandReviews from "../components/RatingsandReviews";
 import News from "../components/News";
 import ContactUs from "../components/ContactUs";
-
+import LogoImage from "../assets/kriebellaw.png"
 //Creating the functions for the Navbar
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -19,30 +19,18 @@ const Navbar = () => {
   return (
     <>
       <Nav
-        className="bg-primary min-w-full w-screen max-w-screen"
+        className="bg-red-900 text-yellow-300 min-w-full w-screen max-w-screen"
         style={{ top: 0 }}
       >
         <div className="flex-none">
           <Button shape="square" color="ghost">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="inline-block w-5 h-5 stroke-current"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+           <Avatar shape='circle' size='xs'src={LogoImage}></Avatar>
           </Button>
         </div>
 
         {/*Beginning of the Navbar*/}
         <Nav.Start>
-          <Button tag="a" color="teal-900 h-5" className="normal-case text-xl">
+          <Button tag="a" color="" className="normal-case text-xl bg-gray-500">
             Jacqueline R. Kriebel
           </Button>
         </Nav.Start>

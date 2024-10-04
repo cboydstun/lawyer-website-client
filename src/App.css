@@ -5,3 +5,6 @@
   /* padding: 2rem; */
   text-align: center;
 }
+.section-border{
+  border-bottom: 0.53em solid #C4141B;
+}
