@@ -1,0 +1,25 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif,;
+    line-height: 1.6;
+}
+
+.heading {
+    color: #2c3e50;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.paragraph {
+    color: #34495e;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.list {
+    margin-left: 20px; {/*Indentation for list items*/}
+}

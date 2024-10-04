@@ -1,12 +1,13 @@
 import React from "react";
+import "./PracticeArea.css";
 
 const Homicide = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-left">Homicide</h1>
-      <p className="text-lg font bold text-justify">
-        Determined Texas Criminal Defense Lawyer Fighting for Clients Facing
-        Homicide Charges Experienced Litigator Defending Clients in the San
+    <div className="container">
+      <h1 className="heading">Homicide</h1>
+      <p className="paragraph">
+         Facing
+        Homicide Charges? Experienced Litigator Defending Clients in the San
         Antonio Area Accused of Unlawful Killing Homicide, defined as the
         unlawful killing of another person, carries severe penalties,
         potentially resulting in life imprisonment. If you are facing charges of
@@ -33,8 +34,11 @@ const Homicide = () => {
         prosecution, and every defendant is presumed innocent until proven
         guilty beyond a reasonable doubt. When I represent you, you can count on
         my zealous advocacy to uphold your rights from the very beginning of
-        your case. Attorney Thoroughly Examining Evidence to Challenge
-        Prosecutors’ Claims Homicide investigations often involve complex
+        your case. </p>
+        
+        <h1 className="heading">Attorney Thoroughly Examining Evidence to Challenge
+        Prosecutors’ Claims </h1>
+        <p className="paragraph"> Homicide investigations often involve complex
         evidence, including scientific data and witness statements. Jurors
         typically place significant trust in forensic evidence, which can be a
         powerful tool in homicide cases. I meticulously review all relevant
@@ -47,8 +51,11 @@ const Homicide = () => {
         challenge false or unsupported statements. At Kriebel Law Firm, PLLC, I
         understand that your freedom is on the line when facing a homicide
         charge. You can rely on my trial-tested advocacy and deep knowledge of
-        Texas law to protect that freedom. Contact an Assertive Texas Criminal
-        Defense Firm for Your Homicide Charge If you are charged with a serious
+        Texas law to protect that freedom. </p>
+        
+        <h1 className="heading"> Contact an Assertive Texas Criminal
+        Defense Firm for Your Homicide Charge </h1>
+        <p className="paragraph"> If you are charged with a serious
         felony such as murder or manslaughter, you need immediate assistance
         from a defense attorney committed to fighting for your rights. Kriebel
         Law Firm, PLLC, located in San Antonio, represents clients throughout

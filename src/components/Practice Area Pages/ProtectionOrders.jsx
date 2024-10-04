@@ -1,11 +1,12 @@
 import React from "react";
+import "./PracticeArea.css";
 
 const ProtectionOrders = () => {
     return (
-        <div>
-            <h1 className="text-3xl font-bold text-left">Protection Orders</h1>
-            <p className="text-lg font bold text-justify">  Texas Family Law Attorney Advocating for Clients in Need of Protection
-        Relentless Lawyer Defending Victims in the San Antonio Area If you fear
+        <div className="container">
+            <h1 className="heading">Protection Orders</h1>
+            <p className="paragraph"> Texas Family Law Attorney Advocating for Clients in Need of Protection
+        Relentless Lawyer Defending Victims in the San Antonio Area. If you fear
         for your safety due to threats or abuse from someone you know, the
         Kriebel Law Firm, PLLC is ready to act swiftly to protect you and your
         children. I assist clients in the San Antonio area and across Texas in
@@ -16,23 +17,35 @@ const ProtectionOrders = () => {
         cannot harm you. Regardless of the terminology, these orders are
         designed to prevent contact from anyone who has threatened your safety.
         I am committed to doing whatever it takes to safeguard you and your
-        family against domestic violence and intimidation. Aggressive Advocate
-        for Filing Protective Orders Orders of protection are vital legal tools
+        family against domestic violence and intimidation. </p>
+        
+        <h1 className="heading">Aggressive Advocate
+        for Filing Protective Orders </h1> 
+        <p className="paragraph"> Orders of protection are vital legal tools
         for keeping victims safe from their abusers. Recognized across all
         states, these orders limit the actions of individuals who pose a threat,
         allowing you to live free from fear. I will guide you through the
         process of obtaining an order of protection in Texas, ensuring you
         understand your rights and the legal mechanisms available to you. The
-        relief provided by these orders can include: Stay-Away Provisions: These
+        relief provided by these orders can include: </p>
+
+        <ul className="list">
+            <li> Stay-Away Provisions: These
         provisions require the accused to maintain a specific distance from you,
-        your home, your workplace, and your children's schools. Cease-Abuse
+        your home, your workplace, and your children's schools. </li>
+        <li> Cease-Abuse
         Provisions: These require the abuser to stop any abusive or threatening
-        behavior toward you or your children. No-Contact Provisions: These
+        behavior toward you or your children. </li>
+        <li> No-Contact Provisions: These
         prevent the accused from making any form of contact, including
-        in-person, telephonic, electronic, or through third parties. Additional
+        in-person, telephonic, electronic, or through third parties. </li>
+        <li> Additional
         provisions may involve the surrendering of firearms, payment of spousal
         or child support, or granting you sole possession of shared vehicles or
-        living spaces. Depending on jurisdiction, restraining orders can be
+        living spaces. </li>
+        </ul>
+        
+        <p className="paragrpah"> Depending on jurisdiction, restraining orders can be
         issued by family courts, civil courts, or criminal courts. You can trust
         me to vigorously assert your rights and pursue all available legal
         remedies to ensure your safety. Contact a Committed Texas Family Lawyer
