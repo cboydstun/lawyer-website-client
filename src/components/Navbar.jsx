@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <Nav
-        className="bg-red-900 text-yellow-300 min-w-full w-screen max-w-screen"
+        className="bg-red-900 text-black font-normal min-w-full w-screen max-w-screen"
         style={{ top: 0 }}
       >
         <div className="flex-none">
