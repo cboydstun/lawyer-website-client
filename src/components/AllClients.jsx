@@ -1,34 +1,43 @@
 import React from "react";
 
-const AllClients = () => {
-  const [clients, setClients] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+const AllClients = ({ clients }) => {
+  const displayUsers = () => {
+    return clients?.map((item) => (
+      <tr key={item.id}>
+        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+          {item.username}
+        </td>
+        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+          {item.password}
+        </td>
+        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+          {item.email}
+        </td>
+        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
+          {item.phoneNumber}
+        </td>
+      </tr>
+    ));
+  };
+  return (
+    <table style={{ width: "600px" }}>
+      <thead>
+        <tr>
+          <th style={{ border: "1px solid black", padding: "8px" }}>
+            Username
+          </th>
+          <th style={{ border: "1px solid black", padding: "8px" }}>
+            Password
+          </th>
+          <th style={{ border: "1px solid black", padding: "8px" }}>Email</th>
+          <th style={{ border: "1px solid black", padding: "8px" }}>
+            Phone Number
+          </th>
+        </tr>
+      </thead>
+      <tbody>{displayUsers()}</tbody>
+    </table>
+  );
 };
-
-const getAllClients = async () => {
-    try{
-let result = await fetch("localhost:8080/user/api/users", {
-headers: {
-    Authorization: "Bearer" + localStorage.getItem("token"),
-})
-
-let json = await result.json();
-
-setResults(json.Results); 
-console.log(json);
-} catch (err) {
-console.log(err);
-}
-
-useEffect(() => {
-  getAllClients();
-}, []);
-
-
-
-
-};
-
 
 export default AllClients;
