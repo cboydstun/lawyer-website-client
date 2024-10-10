@@ -8,7 +8,6 @@ table {
 }
 .admin-login-container {
   width: 400px;
-  margin: 50px auto;
   padding: 20px;
   background: maroon;
   border-radius: 8px;
@@ -17,8 +16,8 @@ table {
   padding-top: 1em;
 }
 .sign-in-container {
-  width: 400px;
-  margin: 50px auto;
+  max-width: 400px;
+
   padding: 20px;
   background: white;
   border-radius: 8px;
@@ -27,4 +26,8 @@ table {
 .Auth-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 7em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }

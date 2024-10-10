@@ -1,4 +1,5 @@
-import React, { useState } from "react"; //Import for REACT
+import React, { useEffect, useState } from "react"; //Import for REACT
+
 //Import Routes
 import "./App.css";
 import "./components/Navbar.jsx";
@@ -7,6 +8,7 @@ import Auth from "./components/Auth.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
+import AllClients from "./components/AllClients.jsx";
 import About from "./components/About.jsx";
 import Attorneyprofile from "./components/Attorneyprofile.jsx";
 import PracticeArea from "./components/PracticeArea.jsx";
@@ -34,6 +36,8 @@ import Juvenilelaw from "./components/Practice Area Pages/Juvenilelaw.jsx";
 //Function for Navbar
 function App() {
   const [sessionToken, setSessionToken] = useState("");
+  const [clients, setClients] = useState([]);
+  const [errorMsg, setErrorMsg] = useState("");
   const updateToken = (token) => {
     console.log("Token updated!");
     localStorage.setItem("token", token);
@@ -44,6 +48,33 @@ function App() {
     console.log("Token Removed!");
     setSessionToken("");
     localStorage.clear();
+  };
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      getAllClients();
+    }
+  }, []);
+
+  const getAllClients = async (e) => {
+    try {
+      let result = await fetch("http://localhost:8080/user/api/users", {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
+      const json = await result.json();
+      if (json.Error) {
+        throw new Error(error.json);
+      }
+      console.log(json);
+      setClients(results.json);
+
+      console.log("hi");
+      // props.updateToken(json.Token);
+    } catch (err) {
+      console.log(err);
+      setErrorMsg(err.message);
+    }
   };
 
   return (
@@ -85,7 +116,7 @@ function App() {
               element={<Auth updateToken={updateToken} />}
             />
           </Routes>
-
+          {sessionToken ? <AllClients clients={clients} /> : null}
           <div>
             <ContactUs />
           </div>

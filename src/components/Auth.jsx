@@ -37,131 +37,93 @@ const Auth = (props) => {
       setErrorMsg(err.message);
     }
   };
-  useEffect(() => {
-    if (localStorage.getItem("token")) {
-      getAllClients();
-    }
-  }, []);
-
-  const getAllClients = async (e) => {
-    try {
-      let result = await fetch("http://localhost:8080/user/api/users", {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
-      const json = await result.json();
-      if (json.Error) {
-        throw new Error(error.json);
-      }
-      console.log(json);
-      setResults(results.json);
-
-      console.log("hi");
-      // props.updateToken(json.Token);
-    } catch (err) {
-      console.log(err);
-      setErrorMsg(err.message);
-    }
-  };
-  const displayUsers = () => {
-    return results?.map((item) => (
-      <tr key={item.id}>
-        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-          {item.username}
-        </td>
-        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-          {item.password}
-        </td>
-        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-          {item.email}
-        </td>
-        <td style={{ border: "1px solid #ddd", padding: "8px" }}>
-          {item.phoneNumber}
-        </td>
-      </tr>
-    ));
-  };
 
   return (
-    <div className="sign-in-container">
-      <form
-        className="Auth-content"
-        onSubmit={(i) => {
-          i.preventDefault();
-          handleSignup();
-        }}
-      >
+    <div>
+      <div className="Auth-content">
         <div className="sign-in-container">
-          <label className="label first-line:left-7">Username:</label>
-          <input
-            required
-            type="username"
-            className="input input-bordered w-full max-w-xs"
-            placeholder="Enter Username"
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <label className="label first-line:left-7">Email:</label>
-          <input
-            type="email"
-            className="input input-bordered w-full max-w-xs"
-            placeholder="Enter Email"
-            required
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label className="label first-line:left-7">Password:</label>
-          <input
-            required
-            type="password"
-            className="input input-bordered w-full max-w-xs"
-            placeholder="Enter Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <label className="label first-line:left-7">Phone Number:</label>
-          <input
-            type="phoneNumber"
-            className="input input-bordered w-full max-w-xs"
-            placeholder="Phone Number"
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-          />
-          <button
-            type="submit"
-            className="btn-outline btn-success btn btn-wide"
+          <form
+            onSubmit={(i) => {
+              i.preventDefault();
+              handleSignup();
+            }}
           >
-            Sign Up
-          </button>
+            <label className="label first-line:left-7">Username:</label>
+            <input
+              required
+              type="username"
+              className="input input-bordered w-full max-w-xs"
+              placeholder="Enter Username"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <label className="label first-line:left-7">Email:</label>
+            <input
+              type="email"
+              className="input input-bordered w-full max-w-xs"
+              placeholder="Enter Email"
+              required
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label className="label first-line:left-7">Password:</label>
+            <input
+              required
+              type="password"
+              className="input input-bordered w-full max-w-xs"
+              placeholder="Enter Password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <label className="label first-line:left-7">Phone Number:</label>
+            <input
+              type="phoneNumber"
+              className="input input-bordered w-full max-w-xs"
+              placeholder="Phone Number"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+            />
+            <button
+              type="submit"
+              className="btn-outline btn-success btn btn-wide"
+            >
+              Sign Up
+            </button>
+          </form>
         </div>
 
         <div className="admin-login-container">
-          <h1>Admin Login</h1>
-          <label className="label first-line:left-7">Email:</label>
-          <input
-            type="email"
-            className="input input-bordered w-full max-w-xs"
-            placeholder="Enter Email"
-            required
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label className="label first-line:right-7">Password:</label>
-          <input
-            required
-            type="password"
-            className="input input-bordered w-full max-w-xs"
-            placeholder="Enter Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button
-            type="submit"
-            className="btn-outline btn-success btn btn-wide"
+          <form
+            onSubmit={(i) => {
+              i.preventDefault();
+              // handleLogin()
+            }}
           >
-            Admin Login
-          </button>
+            <h1>Admin Login</h1>
+            <label className="label first-line:left-7">Email:</label>
+            <input
+              type="email"
+              className="input input-bordered w-full max-w-xs"
+              placeholder="Enter Email"
+              required
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label className="label first-line:right-7">Password:</label>
+            <input
+              required
+              type="password"
+              className="input input-bordered w-full max-w-xs"
+              placeholder="Enter Password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button
+              type="submit"
+              className="btn-outline btn-success btn btn-wide mt-20"
+            >
+              Admin Login
+            </button>
+          </form>
         </div>
-      </form>
-      <div></div>
+      </div>
       <div>
-        <form>
+        {/* <form>
           <button
             type="button"
             className="btn btn-outline"
@@ -178,26 +140,7 @@ const Auth = (props) => {
           >
             Logout
           </button>
-        </form>
-        <table style={{ width: "600px" }}>
-          <thead>
-            <tr>
-              <th style={{ border: "1px solid black", padding: "8px" }}>
-                Username
-              </th>
-              <th style={{ border: "1px solid black", padding: "8px" }}>
-                Password
-              </th>
-              <th style={{ border: "1px solid black", padding: "8px" }}>
-                Email
-              </th>
-              <th style={{ border: "1px solid black", padding: "8px" }}>
-                Phone Number
-              </th>
-            </tr>
-          </thead>
-          <tbody>{displayUsers()}</tbody>
-        </table>
+        </form> */}
       </div>
     </div>
   );
