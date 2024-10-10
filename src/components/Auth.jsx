@@ -11,18 +11,6 @@ const Auth = (props) => {
   const [text, setText] = useState("");
   const [results, setResults] = useState([]);
 
-  const updateToken = (token) => {
-    console.log("Token updated!");
-    localStorage.setItem("token", token);
-    setSessionToken(token);
-  };
-
-  const clearToken = () => {
-    console.log("Token Removed!");
-    setSessionToken("");
-    localStorage.clear();
-  };
-
   const handleSignup = async () => {
     try {
       setErrorMsg("");
@@ -44,39 +32,38 @@ const Auth = (props) => {
         throw new Error(json.Error);
       }
       console.log(json);
+      props.updateToken(json.Token);
     } catch (err) {
       setErrorMsg(err.message);
     }
-    useEffect(() => {
-      if (localStorage.getItem("token")) {
-        getAllClients();
-      }
-    }, []);
-    const getAllClients = async (e) => {
-      try {
-        console.log("popcorn");
-
-        let result = await fetch("http://localhost:8080/user/api/users", {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
-        });
-        const json = await result.json();
-        if (json.Error) {
-          throw new Error(error.json);
-        }
-        console.log(json);
-        setResults(results.json);
-
-        console.log("hi");
-        // props.updateToken(json.Token);
-      } catch (err) {
-        console.log(err);
-        setErrorMsg(err.message);
-      }
-    };
   };
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      getAllClients();
+    }
+  }, []);
 
+  const getAllClients = async (e) => {
+    try {
+      let result = await fetch("http://localhost:8080/user/api/users", {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
+      const json = await result.json();
+      if (json.Error) {
+        throw new Error(error.json);
+      }
+      console.log(json);
+      setResults(results.json);
+
+      console.log("hi");
+      // props.updateToken(json.Token);
+    } catch (err) {
+      console.log(err);
+      setErrorMsg(err.message);
+    }
+  };
   const displayUsers = () => {
     return results?.map((item) => (
       <tr key={item.id}>
@@ -97,81 +84,111 @@ const Auth = (props) => {
   };
 
   return (
-    <div>
+    <div className="sign-in-container">
       <form
+        className="Auth-content"
         onSubmit={(i) => {
           i.preventDefault();
           handleSignup();
         }}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          borderStyle: "solid",
-        }}
       >
-        <label className="label first-line:left-7">Username:</label>
-        <input
-          required
-          type="username"
-          className="input input-bordered w-full max-w-xs"
-          placeholder="Enter Username"
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <label className="label first-line:left-7">Email:</label>
-        <input
-          type="email"
-          className="input input-bordered w-full max-w-xs"
-          placeholder="Enter Email"
-          required
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label className="label first-line:left-7">Password:</label>
-        <input
-          required
-          type="password"
-          className="input input-bordered w-full max-w-xs"
-          placeholder="Enter Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <label className="label first-line:left-7">Phone Number:</label>
-        <input
-          type="phoneNumber"
-          className="input input-bordered w-full max-w-xs"
-          placeholder="Phone Number"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-        />
-        <button type="submit" className="btn-outline btn-success btn btn-wide">
-          Sign Up
-        </button>
+        <div className="sign-in-container">
+          <label className="label first-line:left-7">Username:</label>
+          <input
+            required
+            type="username"
+            className="input input-bordered w-full max-w-xs"
+            placeholder="Enter Username"
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <label className="label first-line:left-7">Email:</label>
+          <input
+            type="email"
+            className="input input-bordered w-full max-w-xs"
+            placeholder="Enter Email"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label className="label first-line:left-7">Password:</label>
+          <input
+            required
+            type="password"
+            className="input input-bordered w-full max-w-xs"
+            placeholder="Enter Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <label className="label first-line:left-7">Phone Number:</label>
+          <input
+            type="phoneNumber"
+            className="input input-bordered w-full max-w-xs"
+            placeholder="Phone Number"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+          />
+          <button
+            type="submit"
+            className="btn-outline btn-success btn btn-wide"
+          >
+            Sign Up
+          </button>
+        </div>
+
+        <div className="admin-login-container">
+          <h1>Admin Login</h1>
+          <label className="label first-line:left-7">Email:</label>
+          <input
+            type="email"
+            className="input input-bordered w-full max-w-xs"
+            placeholder="Enter Email"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label className="label first-line:right-7">Password:</label>
+          <input
+            required
+            type="password"
+            className="input input-bordered w-full max-w-xs"
+            placeholder="Enter Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button
+            type="submit"
+            className="btn-outline btn-success btn btn-wide"
+          >
+            Admin Login
+          </button>
+        </div>
       </form>
       <div></div>
       <div>
         <form>
-          <input value={text} onChange={(e) => setText(e.target.value)} />
-
           <button
             type="button"
+            className="btn btn-outline"
             onClick={() => {
               getAllClients();
             }}
           >
             All Clients
           </button>
-          <button style={{ color: "red" }} onClick={() => clearToken()}>
+          <button
+            className="btn btn-outline"
+            style={{ position: "relative", color: "red", height: "auto" }}
+            onClick={() => clearToken()}
+          >
             Logout
           </button>
         </form>
-        <table>
+        <table style={{ width: "600px" }}>
           <thead>
             <tr>
-              <th style={{ border: "1px solid #ddd", padding: "8px" }}>
+              <th style={{ border: "1px solid black", padding: "8px" }}>
                 Username
               </th>
-              <th style={{ border: "1px solid #ddd", padding: "8px" }}>
+              <th style={{ border: "1px solid black", padding: "8px" }}>
                 Password
               </th>
-              <th style={{ border: "1px solid #ddd", padding: "8px" }}>
+              <th style={{ border: "1px solid black", padding: "8px" }}>
                 Email
               </th>
               <th style={{ border: "1px solid black", padding: "8px" }}>

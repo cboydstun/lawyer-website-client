@@ -1,4 +1,4 @@
-import React from "react"; //Import for REACT
+import React, { useState } from "react"; //Import for REACT
 //Import Routes
 import "./App.css";
 import "./components/Navbar.jsx";
@@ -33,6 +33,19 @@ import Juvenilelaw from "./components/Practice Area Pages/Juvenilelaw.jsx";
 
 //Function for Navbar
 function App() {
+  const [sessionToken, setSessionToken] = useState("");
+  const updateToken = (token) => {
+    console.log("Token updated!");
+    localStorage.setItem("token", token);
+    setSessionToken(token);
+  };
+
+  const clearToken = () => {
+    console.log("Token Removed!");
+    setSessionToken("");
+    localStorage.clear();
+  };
+
   return (
     <>
       <Router>
@@ -59,7 +72,7 @@ function App() {
               path="/equitable-distribution"
               element={<EquitableDistribution />}
             />
-            <Route path="/juvenile-law" element={<Juvenilelaw/>} />
+            <Route path="/juvenile-law" element={<Juvenilelaw />} />
             <Route path="/homicide" element={<Homicide />} />
             <Route path="/protection-orders" element={<ProtectionOrders />} />
             <Route path="/traffic-violations" element={<TrafficViolations />} />
@@ -67,7 +80,10 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/ratingsandreviews" element={<RatingsandReviews />} />
             <Route path="/MapsandDirections" element={<MapsandDirections />} />
-            <Route path="/SignUp" element={<Auth />} />
+            <Route
+              path="/SignUp"
+              element={<Auth updateToken={updateToken} />}
+            />
           </Routes>
 
           <div>
