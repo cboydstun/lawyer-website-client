@@ -1,10 +1,13 @@
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
+  margin: 190px;
   font-size: 1em;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: black;
+  justify-content: center;
+  margin-top: 2em;
+  margin-right: 20em;
+  margin-bottom: 1em;
+  padding-top: 1em;
 }
 .admin-login-container {
   width: 400px;
@@ -12,16 +15,22 @@ table {
   background: maroon;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: yellow;
   padding-top: 1em;
 }
 .sign-in-container {
   max-width: 400px;
 
   padding: 20px;
-  background: white;
+  background: maroon;
+
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.admin-login-container > form > label {
+  color: orange;
+}
+.sign-in-container > form > label {
+  color: orange;
 }
 .Auth-content {
   display: flex;
@@ -30,4 +39,10 @@ table {
   gap: 7em;
   margin-top: 2em;
   margin-bottom: 1em;
+}
+.thead {
+  justify-content: center;
+}
+.p {
+  text-align: center;
 }

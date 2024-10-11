@@ -20,7 +20,7 @@ const AllClients = ({ clients }) => {
     ));
   };
   return (
-    <table style={{ width: "600px" }}>
+    <table style={{ width: "800px" }}>
       <thead>
         <tr>
           <th style={{ border: "1px solid black", padding: "8px" }}>

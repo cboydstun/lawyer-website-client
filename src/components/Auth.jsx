@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Collapse } from "react-daisyui";
 import "./Auth.css";
+import AllClients from "./AllClients";
 const Auth = (props) => {
+  const { user, setUser, getAllClients, clients } = props;
+  const [showTable, setShowTable] = useState(false);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -31,15 +34,35 @@ const Auth = (props) => {
       if (json.Error) {
         throw new Error(json.Error);
       }
+      setUser(json.Created.username);
       console.log(json);
+      console.log(user);
       props.updateToken(json.Token);
     } catch (err) {
       setErrorMsg(err.message);
     }
   };
+  const handleLogin = async () => {
+    const result = await fetch("http://localhost:8080/user/signin", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+        pass: password,
+      }),
+    });
+    const json = await result.json();
+    console.log(json);
+    setUser(json.User.username);
+    setIsAdmin(json.User.isAdmin);
+  };
 
   return (
     <div>
+      <p>Hello</p>
+      <p>Welcome to the Sign up Area</p>
       <div className="Auth-content">
         <div className="sign-in-container">
           <form
@@ -82,7 +105,7 @@ const Auth = (props) => {
             />
             <button
               type="submit"
-              className="btn-outline btn-success btn btn-wide"
+              className="btn-outline btn-success btn btn-wide mt-6"
             >
               Sign Up
             </button>
@@ -93,10 +116,18 @@ const Auth = (props) => {
           <form
             onSubmit={(i) => {
               i.preventDefault();
-              // handleLogin()
+              handleLogin();
             }}
           >
             <h1>Admin Login</h1>
+            <label className="label first-line:left-7">Username:</label>
+            <input
+              required
+              type="username"
+              className="input input-bordered w-full max-w-xs"
+              placeholder="Enter Username"
+              onChange={(e) => setUsername(e.target.value)}
+            />
             <label className="label first-line:left-7">Email:</label>
             <input
               type="email"
@@ -115,7 +146,7 @@ const Auth = (props) => {
             />
             <button
               type="submit"
-              className="btn-outline btn-success btn btn-wide mt-20"
+              className="btn-outline btn-success btn btn-wide mt-11"
             >
               Admin Login
             </button>
@@ -123,24 +154,33 @@ const Auth = (props) => {
         </div>
       </div>
       <div>
-        {/* <form>
+        <form>
+          {isAdmin ? (
+            <button
+              type="button"
+              className="btn btn-outline"
+              onClick={() => {
+                getAllClients();
+                setShowTable(true);
+              }}
+            >
+              All Clients
+            </button>
+          ) : null}
+
           <button
-            type="button"
             className="btn btn-outline"
-            onClick={() => {
-              getAllClients();
+            style={{
+              position: "relative",
+              color: "red",
+              height: "auto",
             }}
-          >
-            All Clients
-          </button>
-          <button
-            className="btn btn-outline"
-            style={{ position: "relative", color: "red", height: "auto" }}
             onClick={() => clearToken()}
           >
             Logout
           </button>
-        </form> */}
+        </form>
+        {showTable ? <AllClients clients={clients} /> : null}
       </div>
     </div>
   );
