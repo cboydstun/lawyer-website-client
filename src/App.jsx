@@ -37,6 +37,7 @@ import Juvenilelaw from "./components/Practice Area Pages/Juvenilelaw.jsx";
 function App() {
   const [sessionToken, setSessionToken] = useState("");
   const [clients, setClients] = useState([]);
+  const [user, setUser] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
   const updateToken = (token) => {
     console.log("Token updated!");
@@ -67,7 +68,7 @@ function App() {
         throw new Error(error.json);
       }
       console.log(json);
-      setClients(results.json);
+      setClients(json);
 
       console.log("hi");
       // props.updateToken(json.Token);
@@ -80,7 +81,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar user={user} />
         <div style={{ minHeight: "65vh" }}>
           <Routes>
             {" "}
@@ -113,7 +114,15 @@ function App() {
             <Route path="/MapsandDirections" element={<MapsandDirections />} />
             <Route
               path="/SignUp"
-              element={<Auth updateToken={updateToken} />}
+              element={
+                <Auth
+                  updateToken={updateToken}
+                  user={user}
+                  setUser={setUser}
+                  getAllClients={getAllClients}
+                  clients={clients}
+                />
+              }
             />
           </Routes>
           {sessionToken ? <AllClients clients={clients} /> : null}

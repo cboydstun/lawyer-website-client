@@ -7,9 +7,9 @@ import MapsandDirections from "../components/MapsandDirections";
 import RatingsandReviews from "../components/RatingsandReviews";
 import News from "../components/News";
 import ContactUs from "../components/ContactUs";
-import LogoImage from "../assets/kriebellaw.png"
+import LogoImage from "../assets/kriebellaw.png";
 //Creating the functions for the Navbar
-const Navbar = () => {
+const Navbar = ({ user }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
       >
         <div className="flex-none">
           <Button shape="square" color="ghost">
-           <Avatar shape='circle' size='xs'src={LogoImage}></Avatar>
+            <Avatar shape="circle" size="xs" src={LogoImage}></Avatar>
           </Button>
         </div>
 
@@ -33,6 +33,11 @@ const Navbar = () => {
           <Button tag="a" color="" className="normal-case text-xl bg-gray-500">
             Jacqueline R. Kriebel
           </Button>
+          <h1
+            style={{ marginLeft: "1.5em", fontSize: "1.3em", color: "yellow" }}
+          >
+            Hello, {user ? user : "User"}
+          </h1>
         </Nav.Start>
 
         {/*End of the Navbar - Links to click around the website*/}
@@ -185,11 +190,11 @@ const Navbar = () => {
 
                 <Dropdown.Item
                   onClick={() => {
-                    navigate("/juvenile-law")
+                    navigate("/juvenile-law");
                   }}
-                  >
-                    <Link to="/juvenile-law">Juvenile Law</Link>
-                  </Dropdown.Item>
+                >
+                  <Link to="/juvenile-law">Juvenile Law</Link>
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
