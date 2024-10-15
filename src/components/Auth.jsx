@@ -119,7 +119,7 @@ const Auth = (props) => {
               handleLogin();
             }}
           >
-            <h1>Admin Login</h1>
+            <h1 className="ptag">Admin Login</h1>
             <label className="label first-line:left-7">Username:</label>
             <input
               required

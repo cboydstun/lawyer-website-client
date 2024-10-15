@@ -27,10 +27,10 @@ table {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .admin-login-container > form > label {
-  color: orange;
+  color: yellow;
 }
 .sign-in-container > form > label {
-  color: orange;
+  color: yellow;
 }
 .Auth-content {
   display: flex;
@@ -45,4 +45,7 @@ table {
 }
 .p {
   text-align: center;
+}
+.ptag {
+  color: yellow;
 }
