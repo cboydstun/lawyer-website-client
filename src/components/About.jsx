@@ -1,45 +1,48 @@
 import React from "react";
 import JacqulineRKriebleImage from "../assets/photos2.jpg";
-import JcIcon from "../assets/Kriebellaw.png";
+import JcIcon from "../assets/kriebellaw.png";
 
 const About = () => {
   const styles = {
     container: {
-      maxWidth: '800px',
-      margin: '0 auto',
-      padding: '20px',
-      fontFamily: 'Arial, sans-serif, bold, 3xl',
+      maxWidth: "800px",
+      margin: "0 auto",
+      padding: "20px",
+      fontFamily: "Arial, sans-serif, bold, 3xl",
       lineHeight: 1.6,
     },
     heading: {
-      color: '#2c3e 50',
-      fontSize: '2.5em',
-      marginBottom: '20px',
+      color: "#2c3e 50",
+      fontSize: "2.5em",
+      marginBottom: "20px",
     },
     paragraph: {
-      color: '#34495e',
-      fontSize: '1.1em',
-      marginBottom: '15px',
+      color: "#34495e",
+      fontSize: "1.1em",
+      marginBottom: "15px",
     },
     imageContainer: {
-      display:'flex',
-      justifycontent: 'center',
-      alignItems:'center',
-      marginBottom: '20px',
+      display: "flex",
+      justifycontent: "center",
+      alignItems: "center",
+      marginBottom: "20px",
     },
   };
   return (
     <div style={styles.container}>
-        <div className="rounded-full flex justify-center gap-20" style={styles.imageContainer}>
-          <img 
+      <div
+        className="rounded-full flex justify-center gap-20"
+        style={styles.imageContainer}
+      >
+        <img
           className="rounded-full flex justify-center gap-20"
           src={JcIcon}
           alt="Image"
           height={450}
-        width={300}
+          width={300}
         />
-        </div>
-        <div className="section-border">
+      </div>
+      <div className="section-border">
         <h1 style={styles.heading}>Meet Jacqueline R. Kriebel</h1>
         <div>
           <p style={styles.paragraph}>
@@ -52,11 +55,9 @@ const About = () => {
             dignity regardless of what their legal situation is.
           </p>
         </div>
-        </div>
-        <div className="section-border">
-        <h1 style={styles.heading}>
-          More About Jacqueline R. Kriebel
-        </h1>
+      </div>
+      <div className="section-border">
+        <h1 style={styles.heading}>More About Jacqueline R. Kriebel</h1>
         <div>
           <p style={styles.paragraph}>
             She will return your phone call as soon as is practical. She will
@@ -83,10 +84,12 @@ const About = () => {
             background by following the link below: Jacqueline R. Kriebel.
           </p>
         </div>
-        </div>
-        <div className="section-border">
+      </div>
+      <div className="section-border">
         <div>
-            <h1 style={styles.heading}>You Deserve an Experienced Attorney You Can Trust</h1>
+          <h1 style={styles.heading}>
+            You Deserve an Experienced Attorney You Can Trust
+          </h1>
           <p>
             It is important to have a divorce lawyer on your side to help you
             understand what you might face. Attorney Kriebel can help you. She
@@ -99,11 +102,13 @@ const About = () => {
             Antonio.
           </p>
         </div>
-        </div>
+      </div>
 
-        <div className="section-border">
+      <div className="section-border">
         <div>
-          <h1 style={styles.heading}>Call Kriebel Law Firm, PLLC Today to Schedule an Appointment</h1>
+          <h1 style={styles.heading}>
+            Call Kriebel Law Firm, PLLC Today to Schedule an Appointment
+          </h1>
           <p style={styles.paragraph}>
             Ms. Kriebel will fight to protect your rights. Get peace of mind by
             working with an attorney who is in your corner. Email or call her
@@ -111,13 +116,13 @@ const About = () => {
             consultation.
           </p>
         </div>
-        </div>
-        <div>
-          <form action="" method="get">
-            Contact Form
-          </form>
-        </div>
       </div>
+      <div>
+        <form action="" method="get">
+          Contact Form
+        </form>
+      </div>
+    </div>
   );
 };
 
