@@ -1,6 +1,6 @@
 import React from "react";
 import lawOfficeImg from "../assets/lawoffice.jpg";
-import JcIcon from "../assets/Kriebellaw.png";
+import JcIcon from "../assets/kriebellaw.png";
 
 const HeroSection = () => {
   return (
