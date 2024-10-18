@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Collapse } from "react-daisyui";
 import "./Auth.css";
 import AllClients from "./AllClients";
+import APIURL from "../helpers";
 const Auth = (props) => {
   const { user, setUser, getAllClients, clients } = props;
   const [showTable, setShowTable] = useState(false);
@@ -17,7 +18,7 @@ const Auth = (props) => {
   const handleSignup = async () => {
     try {
       setErrorMsg("");
-      const result = await fetch("http://localhost:8080/user/signup", {
+      const result = await fetch(`${APIURL}/user/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +44,7 @@ const Auth = (props) => {
     }
   };
   const handleLogin = async () => {
-    const result = await fetch("http://localhost:8080/user/signin", {
+    const result = await fetch(`${APIURL}/user/signin`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
