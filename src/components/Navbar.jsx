@@ -52,13 +52,12 @@ const Navbar = ({ user }) => {
           </Link>
 
           <Dropdown horizontal="left" vertical="bottom">
-            <Link
-              tag="label"
+            <div
               tabIndex={0}
               className="text-white hover:text-yellow-300 transition-colors cursor-pointer"
             >
               Practice Areas
-            </Link>
+            </div>
 
             <Dropdown.Menu className="menu bg-white shadow-xl rounded-lg p-2 w-64 mt-4">
               {[
@@ -86,9 +85,9 @@ const Navbar = ({ user }) => {
                     closeMobileMenu();
                   }}
                 >
-                  <Link to={item.path} className="text-gray-700 hover:text-red-900">
+                  <span className="text-gray-700 hover:text-red-900">
                     {item.label}
-                  </Link>
+                  </span>
                 </Dropdown.Item>
               ))}
             </Dropdown.Menu>
@@ -103,20 +102,18 @@ const Navbar = ({ user }) => {
           </Link>
 
           <Dropdown horizontal="left" vertical="bottom">
-            <Link
-              tag="label"
+            <div
               tabIndex={0}
               className="text-white hover:text-yellow-300 transition-colors cursor-pointer"
             >
               More
-            </Link>
+            </div>
             <Dropdown.Menu className="menu bg-white shadow-xl rounded-lg p-2 w-48 mt-4">
               {[
                 { path: "/news", label: "News" },
                 { path: "/RatingsandReviews", label: "Ratings and Reviews" },
                 { path: "/ContactUs", label: "Contact Us" },
-                { path: "/MapsandDirections", label: "Maps and Directions" },
-                // { path: "/SignUp", label: "Sign Up" }
+                { path: "/MapsandDirections", label: "Maps and Directions" }
               ].map((item) => (
                 <Dropdown.Item
                   key={item.path}
@@ -126,9 +123,9 @@ const Navbar = ({ user }) => {
                     closeMobileMenu();
                   }}
                 >
-                  <Link to={item.path} className="text-gray-700 hover:text-red-900">
+                  <span className="text-gray-700 hover:text-red-900">
                     {item.label}
-                  </Link>
+                  </span>
                 </Dropdown.Item>
               ))}
             </Dropdown.Menu>
@@ -168,31 +165,31 @@ const Navbar = ({ user }) => {
       {/* Mobile menu */}
       {click && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-red-900 shadow-lg">
-          <div className="flex flex-col space-y-4 p-4">
+          <div className="flex flex-col items-center space-y-4 p-4">
             <Link
               to="/"
-              className="text-white hover:text-yellow-300 transition-colors"
+              className="text-white hover:text-yellow-300 transition-colors text-center w-full"
               onClick={closeMobileMenu}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-white hover:text-yellow-300 transition-colors"
+              className="text-white hover:text-yellow-300 transition-colors text-center w-full"
               onClick={closeMobileMenu}
             >
               About
             </Link>
             <Link
               to="/attorneyprofile"
-              className="text-white hover:text-yellow-300 transition-colors"
+              className="text-white hover:text-yellow-300 transition-colors text-center w-full"
               onClick={closeMobileMenu}
             >
               Attorney Profile
             </Link>
             <Link
               to="/clienttestimonials"
-              className="text-white hover:text-yellow-300 transition-colors"
+              className="text-white hover:text-yellow-300 transition-colors text-center w-full"
               onClick={closeMobileMenu}
             >
               Client Testimonials

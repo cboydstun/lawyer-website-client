@@ -125,20 +125,20 @@ const About = () => {
           <h3 className="text-xl font-semibold text-gray-700 mb-6">Areas of Practice</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Family Law",
-              "Criminal Defense",
-              "Child Custody",
-              "Divorce",
-              "DFPS Cases",
-              "Adoption",
-              "Protection Orders"
-            ].map((area) => (
-              <span
-                key={area}
-                className="px-4 py-2 bg-red-900/10 text-red-900 rounded-full text-sm font-medium hover:bg-red-900/20 transition-colors cursor-pointer"
+              { index: 0, label: "Family Law", path: "/family-law" },
+              { index: 1, label: "Criminal Defense", path: "/criminal-law" },
+              { index: 2, label: "Child Custody", path: "/child-custody" },
+              { index: 3, label: "Divorce", path: "/divorce" },
+              { index: 4, label: "Domestic Violent", path: "/domestic-violence" },
+              { index: 5, label: "Protection Orders", path: "/protection-orders" },
+            ].map((index) => (
+              <a
+                key={index}
+                href={index.path}
+                className="inline-block bg-red-900 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-800 transition-colors"
               >
-                {area}
-              </span>
+                {index.label}
+              </a>
             ))}
           </div>
         </section>
