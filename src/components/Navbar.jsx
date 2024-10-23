@@ -1,265 +1,216 @@
-//Importing the libraries for React
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./Navbar.css";
 import { Button, Navbar as Nav, Dropdown, Avatar } from "react-daisyui";
-import MapsandDirections from "../components/MapsandDirections";
-import RatingsandReviews from "../components/RatingsandReviews";
-import News from "../components/News";
-import ContactUs from "../components/ContactUs";
 import LogoImage from "../assets/kriebellaw.png";
-//Creating the functions for the Navbar
+
 const Navbar = ({ user }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const navigate = useNavigate();
 
-  //Styling Navbar
   return (
-    <>
-      <Nav
-        className="bg-red-900 text-black font-normal min-w-full w-screen max-w-screen"
-        style={{ top: 0 }}
-      >
-        <div className="flex-none">
-          <Button shape="square" color="ghost">
-            <Avatar shape="circle" size="xs" src={LogoImage}></Avatar>
+    <Nav className="bg-red-900 shadow-lg fixed top-0 z-50 px-4 py-2">
+      <div className="container mx-auto flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <Button
+            shape="square"
+            color="ghost"
+            className="hover:bg-red-800 transition-colors"
+          >
+            <Avatar
+              shape="circle"
+              size="sm"
+              src={LogoImage}
+              className=" border-gray-200"
+            />
           </Button>
+
+          <div className="flex flex-col">
+            <div
+              className="normal-case text-xl font-serif text-white hover:bg-red-800 transition-colors"
+            >
+              Jacqueline R. Kriebel
+            </div>
+          </div>
         </div>
 
-        {/*Beginning of the Navbar*/}
-        <Nav.Start>
-          <Button tag="a" color="" className="normal-case text-xl bg-gray-500">
-            Jacqueline R. Kriebel
-          </Button>
-          <h1
-            style={{ marginLeft: "1.5em", fontSize: "1.3em", color: "yellow" }}
+        <Nav.End className="hidden lg:flex items-center space-x-6">
+          <Link
+            to="/home"
+            className="text-white hover:text-yellow-300 transition-colors"
+            onClick={closeMobileMenu}
           >
-            Hello, {user ? user : "User"}
-          </h1>
-        </Nav.Start>
+            Home
+          </Link>
 
-        {/*End of the Navbar - Links to click around the website*/}
-        <Nav.End>
-          <div className="flex gap-2">
-            <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
-              Home
+          <Link
+            to="/about"
+            className="text-white hover:text-yellow-300 transition-colors"
+            onClick={closeMobileMenu}
+          >
+            About
+          </Link>
+
+          <Link
+            to="/attorneyprofile"
+            className="text-white hover:text-yellow-300 transition-colors"
+            onClick={closeMobileMenu}
+          >
+            Attorney Profile
+          </Link>
+
+          <Dropdown horizontal="left" vertical="bottom">
+            <Link
+              tag="label"
+              tabIndex={0}
+              className="text-white hover:text-yellow-300 transition-colors cursor-pointer"
+            >
+              Practice Areas
             </Link>
 
+            <Dropdown.Menu className="menu bg-white shadow-xl rounded-lg p-2 w-64 mt-4">
+              {[
+                { path: "/divorce", label: "Divorce" },
+                { path: "/family-law", label: "Family Law" },
+                { path: "/adoption", label: "Adoption" },
+                { path: "/equitable-distribution", label: "Equitable Distribution" },
+                { path: "/alimony", label: "Alimony" },
+                { path: "/protection-orders", label: "Protection Orders" },
+                { path: "/cps", label: "Department of Family and Protective Services" },
+                { path: "/child-custody", label: "Child Custody" },
+                { path: "/criminal-law", label: "Criminal Law" },
+                { path: "/assault", label: "Assault" },
+                { path: "/domestic-violence", label: "Domestic Violence" },
+                { path: "/homicide", label: "Homicide" },
+                { path: "/traffic-violations", label: "Traffic Violations" },
+                { path: "/drug-crimes", label: "Drug Crimes" },
+                { path: "/juvenile-law", label: "Juvenile Law" }
+              ].map((item) => (
+                <Dropdown.Item
+                  key={item.path}
+                  className="hover:bg-red-50"
+                  onClick={() => {
+                    navigate(item.path);
+                    closeMobileMenu();
+                  }}
+                >
+                  <Link to={item.path} className="text-gray-700 hover:text-red-900">
+                    {item.label}
+                  </Link>
+                </Dropdown.Item>
+              ))}
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Link
+            to="/clienttestimonials"
+            className="text-white hover:text-yellow-300 transition-colors"
+            onClick={closeMobileMenu}
+          >
+            Client Testimonials
+          </Link>
+
+          <Dropdown horizontal="left" vertical="bottom">
+            <Link
+              tag="label"
+              tabIndex={0}
+              className="text-white hover:text-yellow-300 transition-colors cursor-pointer"
+            >
+              More
+            </Link>
+            <Dropdown.Menu className="menu bg-white shadow-xl rounded-lg p-2 w-48 mt-4">
+              {[
+                { path: "/news", label: "News" },
+                { path: "/RatingsandReviews", label: "Ratings and Reviews" },
+                { path: "/ContactUs", label: "Contact Us" },
+                { path: "/MapsandDirections", label: "Maps and Directions" },
+                // { path: "/SignUp", label: "Sign Up" }
+              ].map((item) => (
+                <Dropdown.Item
+                  key={item.path}
+                  className="hover:bg-red-50"
+                  onClick={() => {
+                    navigate(item.path);
+                    closeMobileMenu();
+                  }}
+                >
+                  <Link to={item.path} className="text-gray-700 hover:text-red-900">
+                    {item.label}
+                  </Link>
+                </Dropdown.Item>
+              ))}
+            </Dropdown.Menu>
+          </Dropdown>
+        </Nav.End>
+
+        {/* Mobile menu button */}
+        <Button
+          className="lg:hidden hover:bg-red-800"
+          onClick={handleClick}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {click ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </Button>
+      </div>
+
+      {/* Mobile menu */}
+      {click && (
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-red-900 shadow-lg">
+          <div className="flex flex-col space-y-4 p-4">
+            <Link
+              to="/home"
+              className="text-white hover:text-yellow-300 transition-colors"
+              onClick={closeMobileMenu}
+            >
+              Home
+            </Link>
             <Link
               to="/about"
-              className="nav-links"
-              onClick={() => {
-                closeMobileMenu();
-              }}
+              className="text-white hover:text-yellow-300 transition-colors"
+              onClick={closeMobileMenu}
             >
               About
             </Link>
-
             <Link
               to="/attorneyprofile"
-              className="nav-links"
+              className="text-white hover:text-yellow-300 transition-colors"
               onClick={closeMobileMenu}
             >
               Attorney Profile
             </Link>
-
-            {/*Practice Areas drop down links*/}
-            <Dropdown horizontal="left" vertical="bottom">
-              <Link tag="label" tabIndex={0}>
-                Practice Areas
-              </Link>
-
-              <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/divorce");
-                  }}
-                >
-                  <Link to="/divorce">Divorce </Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/family-law");
-                  }}
-                >
-                  <Link to="/family-law">Family Law</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/adoption");
-                  }}
-                >
-                  <Link to="/adoption"> Adoption</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/equitable-distribution");
-                  }}
-                >
-                  <Link to="/equitable-distribution">
-                    Equitable Distribution
-                  </Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/alimony");
-                  }}
-                >
-                  <Link to="/alimony">Alimony</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/protection-orders");
-                  }}
-                >
-                  <Link to="/protection-orders">Protection Orders</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/cps");
-                  }}
-                >
-                  <Link to="/cps">
-                    Department of Family and Protective Services
-                  </Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/child-custody");
-                  }}
-                >
-                  <Link to="/child-custody">Child Custody</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/criminal-law");
-                  }}
-                >
-                  <Link to="/criminal-law">Criminal Law</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/assault");
-                  }}
-                >
-                  <Link to="/assault">Assault</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/domestic-violence");
-                  }}
-                >
-                  <Link to="/domestic-violence">Domestic Violence</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/homicide");
-                  }}
-                >
-                  <Link to="/homicide">Homicide</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/traffic-violations");
-                  }}
-                >
-                  <Link to="/traffic-violations">Traffic Violations</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/drug-crimes");
-                  }}
-                >
-                  <Link to="/drug-crimes">Drug Crimes</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/juvenile-law");
-                  }}
-                >
-                  <Link to="/juvenile-law">Juvenile Law</Link>
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-
-            {/*Link for Client Testimonials*/}
             <Link
               to="/clienttestimonials"
-              className="nav-links"
+              className="text-white hover:text-yellow-300 transition-colors"
               onClick={closeMobileMenu}
             >
               Client Testimonials
             </Link>
-
-            {/*Dropdown Menu for More */}
-            <Dropdown horizontal="left" vertical="bottom">
-              <Link tag="label" tabIndex={0}>
-                More
-              </Link>
-              <Dropdown.Menu className="menu-sm w-52 mt-3 z-[1]">
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/news");
-                  }}
-                >
-                  <Link to="/News">News</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/RatingsandReviews");
-                  }}
-                >
-                  <Link to="/RatingsandReviews">Ratings and Reviews</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/ContactUs");
-                  }}
-                >
-                  <Link to="/ContactUs">Contact Us</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/MapsandDirections");
-                  }}
-                >
-                  <Link to="/MapsandDirections">Maps and Directions</Link>
-                </Dropdown.Item>
-
-                <Dropdown.Item
-                  onClick={() => {
-                    navigate("/SignUp");
-                  }}
-                >
-                  <Link to="/SignUp">Sign Up</Link>
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
           </div>
-        </Nav.End>
-      </Nav>
-    </>
+        </div>
+      )}
+    </Nav>
   );
 };
 
-//Exporting the default Navbar
 export default Navbar;

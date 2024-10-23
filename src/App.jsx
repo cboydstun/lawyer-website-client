@@ -82,7 +82,7 @@ function App() {
     <>
       <Router>
         <Navbar user={user} />
-        <div style={{ minHeight: "65vh" }}>
+        <div style={{ minHeight: "65vh", marginTop: "10vh" }}>
           <Routes>
             {" "}
             {/*Establishing Routes*/}
