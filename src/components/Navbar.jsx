@@ -115,7 +115,8 @@ const Navbar = ({ user }) => {
                 { path: "/news", label: "News" },
                 { path: "/RatingsandReviews", label: "Ratings and Reviews" },
                 { path: "/ContactUs", label: "Contact Us" },
-                { path: "/MapsandDirections", label: "Maps and Directions" }
+                { path: "/MapsandDirections", label: "Maps and Directions" },
+                // { path: "/SignUp", label: "Sign Up" }
               ].map((item) => (
                 <Dropdown.Item
                   key={item.path}
@@ -135,12 +136,30 @@ const Navbar = ({ user }) => {
         </Nav.End>
 
         {/* Mobile menu button */}
-        <Button className="lg:hidden hover:bg-red-800" onClick={handleClick}>
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <Button
+          className="lg:hidden hover:bg-red-800"
+          onClick={handleClick}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
             {click ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </Button>
@@ -150,16 +169,34 @@ const Navbar = ({ user }) => {
       {click && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-red-900 shadow-lg">
           <div className="flex flex-col space-y-4 p-4">
-            {menuItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="text-white hover:text-yellow-300 transition-colors"
-                onClick={closeMobileMenu}
-              >
-                {item.label}
-              </Link>
-            ))}
+            <Link
+              to="/"
+              className="text-white hover:text-yellow-300 transition-colors"
+              onClick={closeMobileMenu}
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className="text-white hover:text-yellow-300 transition-colors"
+              onClick={closeMobileMenu}
+            >
+              About
+            </Link>
+            <Link
+              to="/attorneyprofile"
+              className="text-white hover:text-yellow-300 transition-colors"
+              onClick={closeMobileMenu}
+            >
+              Attorney Profile
+            </Link>
+            <Link
+              to="/clienttestimonials"
+              className="text-white hover:text-yellow-300 transition-colors"
+              onClick={closeMobileMenu}
+            >
+              Client Testimonials
+            </Link>
           </div>
         </div>
       )}
