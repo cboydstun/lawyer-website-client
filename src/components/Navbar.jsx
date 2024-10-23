@@ -37,7 +37,7 @@ const Navbar = ({ user }) => {
 
         <Nav.End className="hidden lg:flex items-center space-x-6">
           <Link
-            to="/home"
+            to="/"
             className="text-white hover:text-yellow-300 transition-colors"
             onClick={closeMobileMenu}
           >
@@ -179,7 +179,7 @@ const Navbar = ({ user }) => {
         <div className="lg:hidden absolute top-full left-0 right-0 bg-red-900 shadow-lg">
           <div className="flex flex-col space-y-4 p-4">
             <Link
-              to="/home"
+              to="/"
               className="text-white hover:text-yellow-300 transition-colors"
               onClick={closeMobileMenu}
             >
