@@ -86,7 +86,7 @@ function App() {
           <Routes>
             {" "}
             {/*Establishing Routes*/}
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/attorneyprofile" element={<Attorneyprofile />} />
             <Route path="/practiceareas" element={<PracticeArea />} />
