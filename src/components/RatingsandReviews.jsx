@@ -35,7 +35,7 @@ const RatingsandReviews = () => {
       </div>
 
       {/* Reviews iframe Container */}
-      <div className="relative bg-white rounded-lg shadow-sm overflow-hidden">
+      <div className="relative bg-white rounded-lg shadow-sm pt-10 overflow-hidden">
         {isLoading && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
             <div className="flex flex-col items-center">
@@ -102,24 +102,25 @@ const RatingsandReviews = () => {
         <h3 className="text-lg font-semibold text-gray-900 mb-4">
           Find Us On Other Review Sites
         </h3>
-        <div className="flex justify-center space-x-6">
-          <a
-            href="https://www.lawyers.com/san-antonio/texas/kriebel-law-firm-pllc-46824588-f/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-red-900 transition-colors"
-          >
-            Lawyers.com
-          </a>
-          <span className="text-gray-300">|</span>
-          <a
-            href="https://www.avvo.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-red-900 transition-colors"
-          >
-            Avvo
-          </a>
+        <div className="flex flex-wrap justify-center gap-3">
+          {[
+            { label: "Lawyers.com", path: "https://www.lawyers.com/san-antonio/texas/kriebel-law-firm-pllc-46824588-f/" },
+            { label: "Avvo", path: "https://www.avvo.com/attorneys/78216-tx-jacqueline-kriebel-4091093.html" },
+            { label: "Nolo", path: "https://lawyers.nolo.com/profile/kriebel-law-firm-pllc" },
+            { label: "Martindale", path: "https://www.martindale.com/attorney/ms-jacqueline-r-kriebel-46824562/" },
+            { label: "FindLaw", path: "https://lawyers.findlaw.com/profile/view/4044925_1?refPageViewId=8d73c11f302347ae" },
+            { label: "Justia", path: "https://lawyers.justia.com/lawyer/jacqueline-kriebel-1508562" },
+          ].map((item) => (
+            <a
+              key={item.label}
+              href={item.path}
+              className="inline-block bg-red-900 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-800 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
       </div>
     </div>
